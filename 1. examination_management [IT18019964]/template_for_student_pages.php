@@ -1,3 +1,4 @@
+<?php include '../homepage_for_student/session_for_student.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
