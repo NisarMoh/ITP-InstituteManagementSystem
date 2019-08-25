@@ -1,4 +1,3 @@
-<?php include '../homepage_for_student/session_for_student.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +8,7 @@
 <body>
 
     <?php include '../homepage_for_student/nav_and_header.inc.php'?>
+    <?php include '../mysql_db_connection.inc.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -23,13 +23,14 @@
                                         <div class="col-md-12">
                                             <div class="page-header-title">
                                                 <!-- [ IMS: page title ] -->
-                                                <h5 class="m-b-10">Notice and forum management</h5>
+                                                <h5 class="m-b-10">Notice and Forum Management</h5> 
                                             </div>
                                             <ul class="breadcrumb">
                                                 <!-- [ IMS: breadcrumb ] -->
                                                 <li class="breadcrumb-item"><a href="../homepage_for_student/homepage.php"><i class="feather icon-home"></i></a></li>
-                                                <li class="breadcrumb-item"><a href="#!">Notice and forum management</a></li>
+                                                <li class="breadcrumb-item"><a href="../2. notice_and_forum [IT18018356]/template_for_student_pages.php">Notice and forum management</a></li>
                                             </ul>
+                                            <a href="../2. notice_and_forum [IT18018356]/newTopic.php" class="btn btn-success">New Topic + </a>
                                         </div>
                                     </div>
                                 </div>
@@ -40,7 +41,45 @@
                                 <div class="col-sm-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <p>Empty Page</p>
+                                    
+                                            <h2>Trending</h3>
+                                            <br>
+                                            
+                                            <?php include '../2. notice_and_forum [IT18018356]/viewTrendingTopics.php' ?>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            
+                                            <h2>Recently Added</h3>
+                                            <br>
+
+                                            <?php include '../2. notice_and_forum [IT18018356]/viewRecentTopics.php' ?>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            
+                                            <h2>Most Viewed</h3>
+                                            <br>
+
+                                            <?php include '../2. notice_and_forum [IT18018356]/viewMostViewedTopics.php' ?>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body">
+
+                                            <h2>Categories</h2>
+                                            <br>
+
+                                            <?php include '../2. notice_and_forum [IT18018356]/viewAllCategories.php' ?>
+                                            
                                         </div>
                                     </div>
                                 </div>
