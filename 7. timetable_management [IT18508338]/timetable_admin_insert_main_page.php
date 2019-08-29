@@ -1,4 +1,3 @@
-<?php include '../dashboard_for_staff/session_for_staff.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +29,7 @@
                                         <ul class="breadcrumb">
                                             <!-- [ IMS: breadcrumb ] -->
                                             <li class="breadcrumb-item"><a href="../dashboard_for_staff/dashboard.php"><i class="feather icon-home"></i></a></li>
-                                            <li class="breadcrumb-item"><a href="#!">Timetable management</a></li>
+                                            <li class="breadcrumb-item"><a href="#!">Create new Timetable</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -44,7 +43,13 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <p>Empty Page</p>
+
+                                        <!--form start-->
+                                        <form method = "post" action=../7.%20timetable_management%20%5BIT18508338%5D/controllers/AddTimetableController.php>
+                                            <label for ="timetableInsertMain">Please enter the venue that you want to create the timetable for</label>
+                                            <input class = "mb-3 form-control form-control-sm" type="text" placeholder="Enter venue" id ="timetableInsertMain" name="timetable_admin_insert_timetableID">
+                                            <button type="submit" class="btn btn-primary" name="timetable_admin_insert_next">Next</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -65,3 +70,6 @@
 </body>
 
 </html>
+
+
+

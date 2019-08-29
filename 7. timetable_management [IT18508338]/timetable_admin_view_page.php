@@ -1,4 +1,3 @@
-<?php include '../dashboard_for_staff/session_for_staff.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,27 +60,27 @@
                                             <!-- [rows] -->
                                             <!--for loop to iterate rows-->
                                             <?php
-                                                $timeslot_start = 8;
-                                                $timeslot_end = 16;
-                                                for($timeslot_start;$timeslot_start <= $timeslot_end;$timeslot_start++){?>
+                                            $timeslot_start = 8;
+                                            $timeslot_end = 16;
+                                            for($timeslot_start;$timeslot_start <= $timeslot_end;$timeslot_start++){?>
 
-                                                    <tr>
+                                                <tr>
                                                     <!-- [time] -->
-                                                        <td>
-                                                            <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start+1?>:00
-                                                        </td>
+                                                    <td>
+                                                        <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start+1?>:00
+                                                    </td>
 
-                                                        <!-- for loop to iterate the column data for a row -->
-                                                        <?php for($i = 1; $i <= 7;$i++) {?>
+                                                    <!-- for loop to iterate the column data for a row -->
+                                                    <?php for($i = 1; $i <= 7;$i++) {?>
                                                         <td>
                                                             subject</br>
                                                             Tutor
                                                         </td>
-                                                        <?php }?>
-                                                        <!--for loop to iterate the column data for a row end -->
-                                                     </tr>
-                                                <?php } ?>
-                                                <!--for loop to iterate rows end -->
+                                                    <?php }?>
+                                                    <!--for loop to iterate the column data for a row end -->
+                                                </tr>
+                                            <?php } ?>
+                                            <!--for loop to iterate rows end -->
                                         </table>
                                         <!-- [Timetable view] end -->
 
