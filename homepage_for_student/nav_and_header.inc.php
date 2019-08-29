@@ -36,7 +36,7 @@
                 </li>
 
 				<li class="nav-item">
-				    <a href="../7.%20timetable_management%20%5BIT18508338%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+				    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_student_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
 				</li>
 
 				<li class="nav-item">
