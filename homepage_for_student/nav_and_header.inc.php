@@ -49,7 +49,7 @@
 		         
 		    
 		              <li class="nav-item">
-				    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext"></span>Learning Materials</a>
+				    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
 				</li>
 				
 		    
