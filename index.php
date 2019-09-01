@@ -63,7 +63,8 @@
 
                                 <?php
                                     //check mysql db connection on the initial page
-                                    include 'mysql_db_connection.inc.php';
+                                    include 'DatabaseConnection.php';
+                                    DatabaseConnection::getInstance()->getConnection();
                                 ?>
 
                                 <div class="col-md-6 col-xl-3">
