@@ -4,7 +4,6 @@
 
 <head>
     <?php include '../dashboard_for_staff/head.inc.php' ?>
-	
 </head>
 
 <body>
@@ -40,68 +39,83 @@
                         <!-- [ breadcrumb ] end -->
 
                         <!-- [ Main Content ] start -->
+						
+						<?php
+								include('./classes/Uplode_staff_class.php');
 
+								$obj_file=new File();
+								if(@$_POST['Submit'])
+
+								{
+									$obj_file ->staff_id="STF001";
+									$obj_file ->file_name=str_replace("'","''",$_POST['upfile_name']);
+									$obj_file ->file_subject=str_replace("'","''",$_POST['upfile_subject']);
+									$obj_file ->file=str_replace("'","''",@$_POST['upfile']);
+									$obj_file ->insert_into_staff();
+								}
+
+						?>
 						
                         <div class="row">
                             <!-- [ fixed-layout ] start -->
                             <div class="col-sm-12">
                                 <div class="card">
-                                                                     
+                                    <div class="card-body">                                    
 										
 										
-										<div class="col-md-6">										
-											
-
+										<div class="col-md-6">
 											
 											
-											<!--<a href="../5.%20file_management%20%5BIT18122138%5D/Insert_for_staff.php">Insert</a>-->
+											<h4 class="mb-3 f-w-400 mb-4">Uplode your file</h4>
+											<form method="post" enctype="multipart/form-data">
+												<div class="form-group row">
+													<label  class="col-sm-2 col-form-label">File name</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control"  name="upfile_name" placeholder="IOT_L2" required>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-sm-2 col-form-label">Subject code</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control"  name="upfile_subject" placeholder="IT2060" required >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label  class="col-sm-2 col-form-label">Date and Time</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control"  name="upfile_date"  value="<?php date_default_timezone_set("Asia/Colombo");echo 			date("Y-m-d h:i:sa");?> " readonly   >
+													</div>
+												</div>
+												<div class="form-group row ">
+													<label  class="col-sm-2 col-form-label">File</label>
+													<div class="col-sm-10">														
+														<input type="file" class="btn btn-info"  name="upfile">
+													</div>
+												</div>
+												<div class="form-group row">
+													<div class="col-sm-10">
+														<div class="alert alert-primary" role="alert">check it out!																	</div>
+													</div>
+												</div>
+												<div class="form-group row">
+													<div class="col-sm-10">
+														<input type="submit" class="btn btn-primary" name="Submit" value="Save">													
+													</div>
+												</div>
+												
+											</form>
 											
 											
-										</div>					                                 
+											
+											
+											
+										</div>					
+                                    </div>
                                 </div>
                             </div>
                             <!-- [ fixed-layout ] end -->
-							
-							
-							
-							
-							
                         </div>
                         <!-- [ Main Content ] end -->
-						<div class="container">
-							<div class="row">
-								<div class="col-md-2">
-									<div class="img-thumbnail">
-										<a href="../5.%20file_management%20%5BIT18122138%5D/Insert_for_staff.php">
-											<img src="./gallery/insert.png" alt="Lights" style="width:100%">
-											<div class="caption">																
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-2">
-									<div class="img-thumbnail">
-										<a href="../5.%20file_management%20%5BIT18122138%5D/Staff_View_for_staff.php">
-											<img src="./gallery/view.png" alt="Nature" style="width:100%">
-											<div class="caption">
-
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-2">
-									<div class="img-thumbnail">
-										<a>
-											<img src="./gallery/edit.png" alt="Fjords" style="width:100%">
-											<div class="caption">
-
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
 
                     </div>
                 </div>

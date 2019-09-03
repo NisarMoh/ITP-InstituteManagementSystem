@@ -35,18 +35,66 @@
                                 </div>
                             </div>
                             <!-- [ Main Content ] start -->
+
+
                             <div class="row">
                                 <!-- [ horizontal-layout ] start -->
                                 <div class="col-sm-12">
                                     <div class="card">
-                                        <div class="card-body">
-                                            <p>Empty Page</p>
-                                        </div>
+
+
+                                        
+
+
+
                                     </div>
                                 </div>
                                 <!-- [ horizontal-layout ] end -->
                             </div>
                             <!-- [ Main Content ] end -->
+							
+							
+							
+							
+							<div class="container">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="img-thumbnail">
+											<a href="../5.%20file_management%20%5BIT18122138%5D/Insert_for_student.php">
+												<img src="./gallery/insert.png" alt="Lights" style="width:100%">
+												<div class="caption">																
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="img-thumbnail">
+											<a href="../5.%20file_management%20%5BIT18122138%5D/Student_View_for_student.php">
+												<img src="./gallery/view.png" alt="Nature" style="width:100%">
+												<div class="caption">
+
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="img-thumbnail">
+											<a>
+												<img src="./gallery/edit.png" alt="Fjords" style="width:100%">
+												<div class="caption">
+
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							
+							
+							
 
                         </div>
                     </div>
