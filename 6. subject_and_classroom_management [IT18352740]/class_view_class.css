@@ -1,0 +1,17 @@
+
+div.col-sm-4 {
+    width: 600px;
+    height: 600px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+div.btn_Delete_and_Update{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}

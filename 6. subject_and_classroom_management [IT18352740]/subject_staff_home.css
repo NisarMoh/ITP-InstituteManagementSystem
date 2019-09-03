@@ -1,0 +1,23 @@
+div.btn_add_subject {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+div.header{
+
+    margin-top: 15px;
+    margin-left: 85px;
+}
+div.btn_view{
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 85px;
+    width: 200px;
+}
+
+div.card_subject{
+   margin-right: auto;
+    margin-left: auto;
+}
+

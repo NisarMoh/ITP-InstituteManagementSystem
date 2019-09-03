@@ -1,0 +1,63 @@
+
+div.class_add {
+    width: 350px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+div.building_add {
+    width: 350px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+div.numberofseats_add {
+    width: 400px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+div.floorno_add{
+    width: 600px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+label.status_AC{
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+div.AC_status{
+    width: 600px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+label.status_M{
+    width: 600px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+div.multimedia{
+    width: 600px;
+    margin-left: 50px;
+}
+
+
+div.btn_add {
+    width: 400px;
+    height: 80px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+}
