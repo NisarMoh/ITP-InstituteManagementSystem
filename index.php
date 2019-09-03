@@ -23,27 +23,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        .m-header {
+       .m-header{
             width: 100% !important;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .pcoded-main-container {
+       }
+        .pcoded-main-container{
             margin-left: unset;
             display: flex;
             align-content: center;
             align-items: center;
         }
-
-        .notification-card {
+        .notification-card{
             cursor: pointer !important;
         }
     </style>
 
 </head>
-
 <body>
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
@@ -65,29 +62,29 @@
                             <div class="row justify-content-center">
 
                                 <?php
-                                //check mysql db connection on the initial page
-                                include 'DatabaseConnection.php';
-                                DatabaseConnection::getInstance()->getConnection();
+                                    //check mysql db connection on the initial page
+                                    include 'DatabaseConnection.php';
+                                    DatabaseConnection::getInstance()->getConnection();
                                 ?>
 
                                 <div class="col-md-6 col-xl-3">
-                                    <a href="3.staff_management[IT18068610]/login.php">
-                                        <div class="card bg-c-blue notification-card">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-4 notify-icon"><i class="fas fa-user-tie"></i></div>
-                                                    <div class="col-8 notify-cont">
-                                                        <h4>Staff</h4>
-                                                        <p>Portal</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                   <a href="dashboard_for_staff/template_for_staff_pages.php">
+                                       <div class="card bg-c-blue notification-card">
+                                           <div class="card-body">
+                                               <div class="row align-items-center">
+                                                   <div class="col-4 notify-icon"><i class="fas fa-user-tie"></i></div>
+                                                   <div class="col-8 notify-cont">
+                                                       <h4>Staff</h4>
+                                                       <p>Portal</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </a>
                                 </div>
 
                                 <div class="col-md-6 col-xl-3">
-                                    <a href="homepage_for_student/template_for_student_pages.php">
+                                    <a href="4. student_management [IT18096576]/index.php">
                                         <div class="card bg-c-blue notification-card">
                                             <div class="card-body">
                                                 <div class="row align-items-center">
@@ -112,10 +109,10 @@
     </div>
     <!-- [ Main Content ] end -->
 
-    <!-- Required Js -->
-    <script src="assets/js/vendor-all.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/pcoded.min.js"></script>
+        <!-- Required Js -->
+        <script src="assets/js/vendor-all.min.js"></script>
+        <script src="assets/js/plugins/bootstrap.min.js"></script>
+        <script src="assets/js/pcoded.min.js"></script>
 
 
     <!-- prism Js -->
