@@ -1,4 +1,20 @@
-<?php include '../homepage_for_student/session_for_student.php' ?>
+<?php
+session_start();
+include_once 'user.php';
+$user = new User();
+$Staff_ID = $_SESSION['Staff_ID'];
+if (!$user->get_session()) {
+    header("location:login.php");
+}
+
+//if (isset($_GET['q'])) {
+//    $user->user_logout();
+  //  header("location:login.php");
+//}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,6 +71,10 @@
         </div>
     </div>
     <!-- [ Main Content ] end -->
+    <div id="header"><a href="logout.php">LOGOUT</a></div>
+    <div id="main-body">
+        <h1>Hello <?php $user->get_fullname($Staff_ID); ?></h1>
+    </div>
 
 
     <?php include'../homepage_for_student/req_js.inc.php' ?>
