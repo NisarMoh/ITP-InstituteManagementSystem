@@ -22,6 +22,10 @@
                                     <div class="row align-items-center">
                                         <div class="col-md-12">
                                             <div class="page-header-title">
+											
+											<?php
+														include 'crudadd.php';
+											?>
                                                 <!-- [ IMS: page title ] -->
                                                 <h5 class="m-b-10">Student management</h5>
                                             </div>
