@@ -1,18 +1,16 @@
 <?php 
-include('../DatabaseConnection.php');
+    include('./db/db.php');
 
 
-class ViewFile 
+class ViewFile extends dbconn
 {
 
 	Var $ViewFile_subject;
 	
 	public function getAllstAssignment()
 	{
-		$db = DatabaseConnection::getInstance();
-		$mysqli = $db->getConnection(); 
 		$sql="SELECT * FROM student_assignment WHERE SubjectID= '$this->ViewFile_subject' "; 
-		$result = $mysqli->query($sql);		
+		$result=$this->connection()->query($sql);
 		return $result;
 	}
 }
