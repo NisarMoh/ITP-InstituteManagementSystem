@@ -45,16 +45,22 @@ if(isset($_POST['update']))
         echo 'Please provide proper email.';    
     } else {    
         //updating the table
-        $result = $crud->execute("UPDATE staff SET Full_Name='$fullname',Last_Name='$lastname',Email='$email', NIC='$nic', Password='$upass', User_Name='$cpass',Qualification='$qualification',Salary='$salary',Ethnic='$ethnic',Religion='$religion',Civil_Status='$civilstatus',Address='$address',Gender='$gender',DateOfBirth='$dob',Phone_Number='$phonenumber',Administrator='$checkadmin',Tutor='$checktutor',Cashier='$checkcashier' WHERE Staff_ID =$id");
+        $sql = "UPDATE staff SET Full_Name='$fullname',Last_Name='$lastname',Email='$email', NIC='$nic', Password='$upass', User_Name='$cpass',Qualification='$qualification',Salary='$salary',Ethnic='$ethnic',Religion='$religion',Civil_Status='$civilstatus',Address='$address',Gender='$gender',DateOfBirth='$dob',Phone_Number='$phonenumber',Administrator='$checkadmin',Tutor='$checktutor',Cashier='$checkcashier' WHERE Staff_ID ='$id';";
+        $result = $crud->execute($sql);
     //    $sqlq="UPDATE staff SET Full_Name='$fullname',Last_Name='$lastname',Email='$email', NIC='$nic', Password='$upass', Confirm_Pass='$cpass',Qualification='$qualification',Salary='$salary',Ethnic='$ethnic',Religion='$religion',Civil_Status='$civilstatus',Address='$address',Gender='$gender',DateOfBirth='$dob',Phone_Number='$phonenumber',Administrator='$checkadmin',Tutor='$checktutor',Cashier='$checkcashier' WHERE Staff_ID ='$id'";
     //     if(!$result){
     //         echo $crud->execute($sqlq);  
     //         echo $id;         
-    //     }
-    echo $id;
+    // //     }
+    // if($result==true){
+    //     echo "true";
+    // }
+    // else{
+    //     echo "false";
+    // }
+    
         //redirectig to the display page. In our case, it is index.php
-       // header("Location: index.php");
+        header("Location: template_Crud.php");
        
     }
 }
-?>

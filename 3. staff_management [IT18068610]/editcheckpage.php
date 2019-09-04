@@ -41,7 +41,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             <div class="page-header bg-primary ">
                                 <div class="page-block ">
                                     <div class="row align-items-center">
-                                        <div class="col-md-12">
+                                        <div class="col-md-8">
                                             <div class="page-header-title">
                                                 <!-- [ IMS: page title ] -->
                                                 <?php include 'edit.php' ?>
