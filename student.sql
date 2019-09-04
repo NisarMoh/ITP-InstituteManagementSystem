@@ -1,3 +1,5 @@
+step one
+
 CREATE TABLE student(
      
    id VARCHAR(7) NOT NULL PRIMARY KEY DEFAULT '0',
@@ -9,16 +11,17 @@ CREATE TABLE student(
    age int(100) NOT NULL,
    contactno int(100) NOT NULL,
    email varchar(100) NOT NULL,
-   address  varchar(250) NOT NULL,
-   
-  
-   );
+   address  varchar(250) NOT NULL
+    );
+	
+step two	
+	
 CREATE TABLE student1
 (
   StudentID INT NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
-
+last step
 Now the trigger
 
 DELIMITER $$
