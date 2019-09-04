@@ -1,3 +1,5 @@
+<?php include '../dashboard_for_staff/session_for_staff.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
