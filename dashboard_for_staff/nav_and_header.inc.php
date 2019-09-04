@@ -186,7 +186,7 @@
                         <div class="pro-head">
                             <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
                             <span><?php $user->get_fullname($Staff_ID); ?></span>
-                            <a href="../3.staff_management[IT18068610]/logout.php" class="dud-logout" title="Logout">
+                            <a href="../3. staff_management [IT18068610]/logout.php" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
                             </a>
                         </div>
