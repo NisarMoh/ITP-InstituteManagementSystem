@@ -79,13 +79,13 @@ class User
         public function get_fullname($Staff_ID)
         {
 
-                $sql3 = "SELECT Full_Name FROM staff WHERE Staff_ID = '$Staff_ID'";
+                $sql3 = "SELECT User_Name FROM staff WHERE Staff_ID = '$Staff_ID'";
 
                 $result = mysqli_query($this->db, $sql3);
 
                 $user_data = mysqli_fetch_array($result);
 
-                echo $user_data['Full_Name'];
+                echo $user_data['User_Name'];
         }
 
         /*** starting the session ***/
