@@ -13,7 +13,7 @@ class dbconn
 	$this->host="localhost";
 	$this->username="root";
 	$this->password="";
-	$this->db_name="oop1";
+	$this->db_name="institute_management_system";
 
 		$conn= new mysqli($this->host,$this->username,$this->password,$this->db_name);
 		return $conn;
