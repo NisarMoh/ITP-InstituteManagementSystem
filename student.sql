@@ -12,19 +12,13 @@ CREATE TABLE student(
    address  varchar(250) NOT NULL,
    
   
-   
- 
-);
+   );
 CREATE TABLE student1
 (
   StudentID INT NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 
-CREATE TABLE student
-(
-  id VARCHAR(7) NOT NULL PRIMARY KEY DEFAULT '0',
-);
 Now the trigger
 
 DELIMITER $$
