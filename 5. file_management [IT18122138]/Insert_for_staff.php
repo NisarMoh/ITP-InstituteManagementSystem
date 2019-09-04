@@ -1,3 +1,15 @@
+<?php
+// Initialize the session
+
+session_start();
+include_once '../3. staff_management [IT18068610]/user.php';
+$user = new User();
+$Staff_ID = $_SESSION['Staff_ID'];
+if (!$user->get_session()) {
+	header("location:login.php");
+}
+?>
+
 <?php include '../dashboard_for_staff/session_for_staff.php' ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +59,7 @@
 								if(@$_POST['Submit'])
 
 								{
-									$obj_file ->staff_id="STF001";
+									$obj_file ->staff_id= $Staff_ID;
 									$obj_file ->file_name=str_replace("'","''",$_POST['upfile_name']);
 									$obj_file ->file_subject=str_replace("'","''",$_POST['upfile_subject']);
 									$obj_file ->file=str_replace("'","''",@$_POST['upfile']);
