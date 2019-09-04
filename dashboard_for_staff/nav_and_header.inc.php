@@ -52,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../7. timetable_management [IT18508338]/timetable_admin_mainmenu_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+                    <a href="../7.%20timetable_management%205BIT18508338%5D/timetable_admin_mainmenu_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
                 </li>
 
                 <li class="nav-item">
