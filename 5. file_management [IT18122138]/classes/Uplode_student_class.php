@@ -1,10 +1,10 @@
 <?php
-include('../DatabaseConnection.php');
+	include('./db/db.php');
 	 /**
 	  * 
 	  */
 
-	 class File 
+	 class File extends dbconn
 	 {
 	 	var
 	 	$student_id,
@@ -58,12 +58,8 @@ include('../DatabaseConnection.php');
 
 	 			$this->file_dt=date("Y-m-d h:i:sa");
 
-				$db = DatabaseConnection::getInstance();
-				$mysqli = $db->getConnection(); 
-				
-				$sql="insert into student_assignment ( StudentID,FileName,SubjectID,assignment_directory,Date_Time) values ('$this->student_id','$this->file_name','$this->file_subject','$file','$this->file_dt') ";	
-				$result = $mysqli->query($sql);	 	
-				
+				$sql="insert into student_assignment ( StudentID,FileName,SubjectID,assignment_directory,Date_Time) values ('$this->student_id','$this->file_name','$this->file_subject','$file','$this->file_dt') ";				
+	 				$result=$this->connection()->query($sql);
 	 				if($result)
 	 				{
 	 					//echo "File uploaded sucessfuly";

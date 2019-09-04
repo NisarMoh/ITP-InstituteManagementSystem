@@ -1,10 +1,10 @@
 <?php
-include('../DatabaseConnection.php');
+	include('./db/db.php');
 	 /**
 	  * 
 	  */
 
-	 class File 
+	 class File extends dbconn
 	 {
 	 	var
 	 	$staff_id,
@@ -56,15 +56,9 @@ include('../DatabaseConnection.php');
 	 			date("Y-m-d h:i:sa");
 
 	 			$this->file_dt=date("Y-m-d h:i:sa");
-				
-				
-				$db = DatabaseConnection::getInstance();
-				$mysqli = $db->getConnection(); 
-				
-	 			$sql="insert into tutor_materials ( Staff_ID,FileName,SubjectID,materials_directory,Date_Time) values ('$this->staff_id','$this->file_name','$this->file_subject','$file','$this->file_dt') ";			
-				$result =$mysqli->query($sql);		
-	 				
-				
+
+	 			$sql="insert into tutor_materials ( Staff_ID,FileName,SubjectID,materials_directory,Date_Time) values ('$this->staff_id','$this->file_name','$this->file_subject','$file','$this->file_dt') ";
+	 				$result=$this->connection()->query($sql);
 	 				if($result)
 	 				{
 	 					//echo "File uploaded sucessfuly";
@@ -75,7 +69,6 @@ include('../DatabaseConnection.php');
 	 					//echo "Try check your details";
 						include('./Alert/warning.html');
 	 				}
-				return $result;
 	 				
 	 		}
 	 		
