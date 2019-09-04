@@ -16,7 +16,6 @@ class DatabaseConnection
     Get an instance of the database
     @return Instance
     */
-
     public static function getInstance() {
         if(!self::$instance) { // If no instance then make one
             self::$instance = new self();
@@ -28,7 +27,6 @@ class DatabaseConnection
     /*
     Constructor
     */
-
     private function __construct() {
 
         // Create connection
@@ -43,13 +41,11 @@ class DatabaseConnection
     /*
     Clone is empty to prevent duplication of connection
     */
-
     private function __clone() { }
 
     /*
     Get mysqli connection
     */
-
     public function getConnection() {
         return $this->connection;
     }
