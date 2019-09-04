@@ -82,7 +82,7 @@
                                                                 <!-- for loop to iterate the column data for a row -->
                                                                 <?php for($i = 1; $i <= 7;$i++) {?>
                                                                     <td>
-                                                                        <input class = "mb-3 form-control form-control-sm" type="text" placeholder="Enter Tutor" name="<?php echo $timeslot_start."tutor".$i?>"/>
+                                                                        <input class = "mb-3 form-control form-control-sm" type="text" oninput="this.value = this.value.replace(/[^a-z]/, '')" placeholder="Enter Tutor" name="<?php echo $timeslot_start."tutor".$i?>"/>
                                                                         <input class = "mb-3 form-control form-control-sm" type="text" placeholder="Enter Subject" name="<?php echo $timeslot_start."subject".$i?>"/>
                                                                     </td>
                                                                 <?php }?>
