@@ -4,6 +4,7 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+    <?php include dirname(__FILE__).'/controllers/ViewRelevantStudentTimetableController.php' ?>
 </head>
 
 <body>
@@ -36,10 +37,22 @@
                             </div>
                             <!-- [ Main Content ] start -->
                             <div class="row">
+                                <?php
+
+                                    global $timetableView;
+                                    global $res;
+                                    global $resCount;
+
+                                    //[for loop to display all the timetables that the student has subjects that he is enrolled in] start
+                                    for($r=0;$r<$resCount;$r++){
+                                ?>
                                 <!-- [ horizontal-layout ] start -->
                                 <div class="col-sm-12">
                                     <div class="card">
                                         <div class="card-body">
+
+                                            <!-- echo out the timetable id -->
+                                            <h5><?php print_r($res[$r]) ?></h5>
 
                                             <!-- [Timetable view]-->
                                             <table class="table table-hover"">
@@ -57,6 +70,8 @@
                                                 <!-- [rows] -->
                                                 <!--for loop to iterate rows-->
                                                     <?php
+
+                                                        //start and end times
                                                         $timeslot_start = 8;
                                                         $timeslot_end = 16;
                                                         for($timeslot_start;$timeslot_start <= $timeslot_end;$timeslot_start++){ ?>
@@ -68,23 +83,33 @@
                                                                 </td>
 
                                                                 <!-- for loop to iterate the column data for a row -->
-                                                                 <?php for($i = 1; $i <= 7;$i++) {?>
+                                                                <?php for($i = 1; $i <= 7;$i++) {
+                                                                    $tcsv = new ITimetableCellServiceImplementation();
+                                                                    TimetableCell::setTimeId($res[$r]);
+
+                                                                    $tcsv->viewAllTimetableCells(TimetableCell::getTimeId(),$i,$timeslot_start);
+
+                                                                    ?>
                                                                  <td>
-                                                                    subject</br>
-                                                                    Tutor
+                                                                     <?php echo TimetableCell::getTutorId() ?></br>
+                                                                     <?php echo TimetableCell::getSubjectId() ?>
                                                                 </td>
                                                                 <?php }?>
                                                                 <!--for loop to iterate the column data for a row end -->
+
                                                             </tr>
                                                         <?php } ?>
                                                         <!--for loop to iterate rows end -->
+
                                             </table>
                                             <!-- [Timetable view] end -->
 
                                         </div>
                                     </div>
                                 </div>
-                                <!-- [ horizontal-layout ] end -->
+                                    <?php } ?>
+                                <!--[for loop to display all the timetables that the student has subjects that he is enrolled in] end
+                                [ horizontal-layout ] end -->
                             </div>
                             <!-- [ Main Content ] end -->
 
@@ -95,7 +120,6 @@
         </div>
     </div>
     <!-- [ Main Content ] end -->
-
 
     <?php include'../homepage_for_student/req_js.inc.php' ?>
 </body>

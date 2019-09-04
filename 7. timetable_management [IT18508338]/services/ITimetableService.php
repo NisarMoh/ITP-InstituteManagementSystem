@@ -7,10 +7,6 @@ interface ITimetableService
 
     public function deleteTimetable();
 
-    public function updateTimetable();
-
     public function viewAllTimetables();
-
-    public function viewRelevantTimetables();
 
 }

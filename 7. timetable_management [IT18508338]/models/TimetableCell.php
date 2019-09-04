@@ -1,120 +1,127 @@
 <?php
 
 
+
 class TimetableCell
 {
-    private $tutorId;
-    private $subjectId;
-    private $startTime;
-    private $endTime;
-    private $day;
+    private static $timeId;
+    //tutor id refers to the tutor identification by name
+    private static $tutorId;
+    //subject id refers to the subject identification by the subject name
+    private static $subjectId;
+    private static $startTime;
+    private static $endTime;
+    private static $day;
+    private static $tcInitialized = false;
 
 
-    /**
-     * TimetableCell constructor.
-     * @param $tutorId
-     * @param $subjectId
-     * @param $time
-     * @param $day
-     */
-
-    public function __construct()
-    {
-        $this->tutorId = "";
-        $this->subjectId = "";
-        $this->startTime = "";
-        $this->endTime = "";
-        $this->day = "";
+    private static function timetableCellInitialize($timeId,$tutor,$subject,$start,$end,$day1){
+        if(self::$tcInitialized){
+            return;
+        }
+        self::$timeId = $timeId;
+        self::$tutorId = $tutor;
+        self::$subjectId = $subject;
+        self::$startTime = $start;
+        self::$endTime = $end;
+        self::$day = $day1;
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getTutorId()
+    public static function getTimeId()
     {
-        return $this->tutorId;
+        return self::$timeId;
     }
 
     /**
-     * @param string $tutorId
+     * @param mixed $timeId
      */
-    public function setTutorId($tutorId)
+    public static function setTimeId($timeId)
     {
-        $this->tutorId = $tutorId;
+        self::$timeId = $timeId;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public static function getTutorId()
+    {
+        return self::$tutorId;
     }
 
     /**
-     * @return string
+     * @param mixed $tutorId
      */
-    public function getSubjectId()
+    public static function setTutorId($tutorId)
     {
-        return $this->subjectId;
+        self::$tutorId = $tutorId;
     }
 
     /**
-     * @param string $subjectId
+     * @return mixed
      */
-    public function setSubjectId($subjectId)
+    public static function getSubjectId()
     {
-        $this->subjectId = $subjectId;
+        return self::$subjectId;
     }
 
     /**
-     * @return string
+     * @param mixed $subjectId
      */
-    public function getStartTime()
+    public static function setSubjectId($subjectId)
     {
-        return $this->startTime;
+        self::$subjectId = $subjectId;
     }
 
     /**
-     * @param string $startTime
+     * @return mixed
      */
-    public function setStartTime($startTime)
+    public static function getStartTime()
     {
-        $this->startTime = $startTime;
+        return self::$startTime;
     }
 
     /**
-     * @return string
+     * @param mixed $startTime
      */
-    public function getEndTime()
+    public static function setStartTime($startTime)
     {
-        return $this->endTime;
+        self::$startTime = $startTime;
     }
 
     /**
-     * @param string $endTime
+     * @return mixed
      */
-    public function setEndTime($endTime)
+    public static function getEndTime()
     {
-        $this->endTime = $endTime;
+        return self::$endTime;
     }
 
     /**
-     * @return string
+     * @param mixed $endTime
      */
-    public function getDay()
+    public static function setEndTime($endTime)
     {
-        return $this->day;
+        self::$endTime = $endTime;
     }
 
     /**
-     * @param string $day
+     * @return mixed
      */
-    public function setDay($day)
+    public static function getDay()
     {
-        $this->day = $day;
+        return self::$day;
     }
 
-
-
-
-
-
-
-
-
-
+    /**
+     * @param mixed $day
+     */
+    public static function setDay($day)
+    {
+        self::$day = $day;
+    }
 
 }
