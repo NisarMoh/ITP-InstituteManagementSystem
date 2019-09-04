@@ -10,7 +10,7 @@ include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php';
     echo '<ul>';
     
     while ($row = $result2->fetch_assoc()) {
-        echo '<li><h4><a href="viewCategory.php?id=' . $row['category_id'] . '">' . $row['category_name'] . '</a></h4></li>';
+        echo '<li><h4><a href="viewCategoryStaff.php?id=' . $row['category_id'] . '">' . $row['category_name'] . '</a></h4></li>';
     }
 
     echo '</ul>';

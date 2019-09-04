@@ -21,11 +21,11 @@ if ($checkResult1 > 0) {
 
         echo '<tr>';
         echo '<td>';
-        echo '<br><h4><a href="viewTopic.php?id=' . $row['topic_id'] . '">' . $row['topic_text'] . "</a></h4><br>";
+        echo '<br><h4><a href="viewTopicStaff.php?id=' . $row['topic_id'] . '">' . $row['topic_text'] . "</a></h4><br>";
         echo '</td>';
 
         echo '<td>';
-        echo '<h4><a href="viewCategory.php?id=' . $row['category_id'] . '">' . $row['category_name'] . '</a></h4>';
+        echo '<h4><a href="viewCategoryStaff.php?id=' . $row['category_id'] . '">' . $row['category_name'] . '</a></h4>';
         echo '</td>';
         echo '</tr>';
     }
@@ -35,7 +35,6 @@ if ($checkResult1 > 0) {
 } else {
 
     echo 'Nothing Trending Today...';
-    echo 'You can check out <a href="../2. notice_and_forum [IT18018356]/viewAllTopics.php">all topics</a>';
 
 }
 

@@ -3,12 +3,13 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+    <?php include '../2. notice_and_forum [IT18018356]/loggedInCheck.php' ?>
 </head>
 
 <body>
 
     <?php include '../homepage_for_student/nav_and_header.inc.php'?>
-    <?php include '../mysql_db_connection.inc.php' ?>
+    <?php require_once '../2. notice_and_forum [IT18018356]/getDBconn.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -43,11 +44,11 @@
 
                                             <form action="../2. notice_and_forum [IT18018356]/addCategory.php" method="post">
 
-                                                <h4>Category Name</h4> <span class="error"> <?php echo $_GET['error']; ?> </span>
-                                                <input type="text" name="category_name" required ><br><br>
+                                                <h4>Category Name</h4> 
+                                                <input type="text" class="form-control w-25" name="category_name" required > <span class="error"> <?php echo $_GET['error']; ?> </span> <br><br>
 
                                                 <h4>Category Description</h4>
-                                                <textarea name="category_description" rows="5" cols="100" required></textarea>
+                                                <textarea name="category_description" class="form-control" rows="5" cols="100" required></textarea>
                                                 <br><br>
 
                                                 <input type="submit" name="submit" class="btn btn-success">

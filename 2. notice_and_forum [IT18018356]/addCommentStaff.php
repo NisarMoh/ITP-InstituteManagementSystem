@@ -24,7 +24,7 @@
 
         $row = $result2->fetch_assoc();
 
-        redirect('../2. notice_and_forum [IT18018356]/viewTopic.php?id='.$post_topic_id.'#'.$row["post_id"]);
+        redirect('../2. notice_and_forum [IT18018356]/viewTopicStaff.php?id='.$post_topic_id.'#'.$row["post_id"]);
     }
 
     function redirect($url) {

@@ -1,7 +1,7 @@
 <?php
-
+    include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php';
     include '../2. notice_and_forum [IT18018356]/dataValidation.php';
-    include '../mysql_db_connection.inc.php';
+    require_once '../2. notice_and_forum [IT18018356]/getDBconn.php';
 
     $category_name = data_validation($_POST["category_name"]);
     $category_description = data_validation($_POST["category_description"]);

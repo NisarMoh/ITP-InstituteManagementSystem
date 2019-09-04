@@ -3,12 +3,13 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+    <?php include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php' ?>
 </head>
 
 <body>
 
     <?php include '../homepage_for_student/nav_and_header.inc.php'?>
-    <?php include '../mysql_db_connection.inc.php' ?>
+    <?php include '../2. notice_and_forum [IT18018356]/getDBconn.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -21,16 +22,17 @@
                                 <div class="page-block">
                                     <div class="row align-items-center">
                                         <div class="col-md-12">
-                                            <div class="page-header-title">
+                                            <div class="page-header-title d-inline">
                                                 <!-- [ IMS: page title ] -->
                                                 <h5 class="m-b-10">Notice and Forum Management</h5> 
                                             </div>
-                                            <ul class="breadcrumb">
+                                            <ul class="breadcrumb d-inline">
                                                 <!-- [ IMS: breadcrumb ] -->
-                                                <li class="breadcrumb-item"><a href="../homepage_for_student/homepage.php"><i class="feather icon-home"></i></a></li>
-                                                <li class="breadcrumb-item"><a href="../2. notice_and_forum [IT18018356]/template_for_student_pages.php">Notice and forum management</a></li>
+                                                <li class="breadcrumb-item d-inline"><a href="../homepage_for_student/homepage.php"><i class="feather icon-home"></i></a></li>
+                                                <li class="breadcrumb-item d-inline"><a href="../2. notice_and_forum [IT18018356]/template_for_student_pages.php">Notice and forum management</a></li>
                                             </ul>
-                                            <a href="../2. notice_and_forum [IT18018356]/newTopic.php" class="btn btn-success">New Topic + </a>
+                                            <a href="../2. notice_and_forum [IT18018356]/newTopic.php" class="btn btn-success float-right d-inline">New Topic + </a>
+                                            <a href="../2. notice_and_forum [IT18018356]/viewAllTopics.php" class="btn btn-warning float-right d-inline">All Topics </a>
                                         </div>
                                     </div>
                                 </div>

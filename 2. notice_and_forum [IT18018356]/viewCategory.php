@@ -3,12 +3,13 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+    <?php include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php' ?>
 </head>
 
 <body>
 
     <?php include '../homepage_for_student/nav_and_header.inc.php'?>
-    <?php include '../mysql_db_connection.inc.php' ?>
+    <?php require_once '../2. notice_and_forum [IT18018356]/getDBconn.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">

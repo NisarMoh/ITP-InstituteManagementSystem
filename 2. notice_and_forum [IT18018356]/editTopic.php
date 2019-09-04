@@ -3,7 +3,7 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
-    <?php include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php'?>
+    <?php include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php' ?>
 </head>
 
 <body>
@@ -39,6 +39,12 @@
                             <div class="row">
                                 <!-- [ horizontal-layout ] start -->
                                 <div class="col-sm-12">
+                                    <div calss="card">
+                                        <div class="card-body">
+                                            <h2>Edit Topic</h2>
+                                        </div>
+                                    </div>
+
                                     <div class="card">
                                         <div class="card-body">
                                             
@@ -47,14 +53,21 @@
                                                     FROM forum_category";
 
                                             $result = $conn->query($sql);
+
+                                            $sql2 = "SELECT topic_description,topic_text 
+                                                     FROM institute_management_system.forum_topic
+                                                     WHERE topic_id = ".$_GET['topic_id'];
+
+                                            $result2 = $conn->query($sql2);
+                                            $row2 = $result2->fetch_assoc();
                                         ?>
-                                        <form action="../2. notice_and_forum [IT18018356]/addTopic.php" method="post">
+                                        <form action="../2. notice_and_forum [IT18018356]/updateTopic.php?topic_id=<?php echo $_GET['topic_id'] ?>" method="post">
 
                                             <h4>Topic</h4>
-                                            <textarea name="topic_name" class="form-control" rows="1" cols="100"></textarea><br><br>
+                                            <textarea name="topic_name" class="form-control" rows="1" cols="100"><?php echo $row2['topic_text'] ?></textarea><br><br>
 
                                             <h4>Category</h4>
-                                            <select name="topic_category" class="form-control w-25">
+                                            <select name="topic_category" class="form-control w-25" value="<?php echo $row2['topic_category_id'] ?>">>
                                                 <?php
                                                     while ($row = $result->fetch_assoc()) {
                                                         echo '<option value = "' .$row['category_id']. '">' .$row['category_name']. '</option>' ;
@@ -63,7 +76,7 @@
                                             </select><br><br>
 
                                             <h4>Description</h4>
-                                            <textarea name="topic_description" class="form-control" rows="10" cols="198"></textarea><br><br><br>
+                                            <textarea name="topic_description" class="form-control" rows="10" cols="198"><?php echo $row2['topic_description'] ?></textarea><br><br><br>
 
                                             <input type="submit" name="submit" class="btn btn-success">
 

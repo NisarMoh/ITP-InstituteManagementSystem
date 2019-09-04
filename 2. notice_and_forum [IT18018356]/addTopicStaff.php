@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php';
     include '../2. notice_and_forum [IT18018356]/dataValidation.php';
     require_once '../2. notice_and_forum [IT18018356]/getDBconn.php';
@@ -26,7 +26,7 @@ session_start();
 
         $row = $result2->fetch_assoc();
 
-        redirect('../2. notice_and_forum [IT18018356]/viewTopic.php?id='.$row['topic_id']);
+        redirect('../2. notice_and_forum [IT18018356]/viewTopicStaff.php?id='.$row['topic_id']);
     }  
 
     

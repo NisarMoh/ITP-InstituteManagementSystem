@@ -3,12 +3,15 @@
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+    <?php session_start();?>
+    <?php include '../2. notice_and_forum [IT18018356]/loggedInCheck.php' ?>
 </head>
 
 <body>
 
     <?php include '../homepage_for_student/nav_and_header.inc.php'?>
-    <?php include '../mysql_db_connection.inc.php' ?>
+    <?php require_once '../2. notice_and_forum [IT18018356]/getDBconn.php' ?>
+    <?php include '../2. notice_and_forum [IT18018356]/getUsername.php'?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -44,16 +47,21 @@
                                             <?php include '../2. notice_and_forum [IT18018356]/updateViewCounter.php' ?>
 
                                             <?php
-                                            $sql = "SELECT topic_text, topic_description , category_name , category_id
+                                            $sql = "SELECT topic_text, topic_description , topic_id , topic_op_id, category_name , category_id
                                                     FROM forum_topic t, forum_category c 
                                                     WHERE t.topic_category_id = c.category_id AND t.topic_id = " .$conn->real_escape_string($_GET['id']);
 
                                             $result = $conn->query($sql);
                                             $row = $result->fetch_assoc();
 
+                                            $username1 = getUsername($row['topic_op_id']);
+
+                                            include '../2. notice_and_forum [IT18018356]/topicMenu.php';
+
                                             echo '<h2>' .$row['topic_text']. '</h2>';
+                                            echo '<h5>' .$username1. '</h2>';
                                             echo '<h5><a href="viewCategory.php?id=' .$row['category_id']. '">' .$row['category_name']. '</a></h5>';
-                                            echo '<p>' .$row['topic_description']. '</p>';
+                                            echo '<pre style="font-size:15px; font-family: Poppins;">' .$row['topic_description']. '</pre>';
                                             ?>
 
                                         </div>
@@ -70,19 +78,37 @@
 
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4>Comments <a href="#newComment" class="btn btn-success" >New Comment + </a></h4>                                           
+                                            <h4>Comments <a href="#newComment" class="btn btn-success float-right" >New Comment + </a></h4>                                           
                                         </div>
                                     </div>
 
                                     <?php
                                     while ($row2 = $result2->fetch_assoc()) {
+                                        $username2 = getUsername($row2['post_poster_id']);
+
                                         echo '<div class="card" id="'.$row2['post_id'].'">
-                                                <div class="card-body">
-                                                    <h5>' .$row2['post_poster_id']. '</h5> <p>'.$row2['post_time']. '  ' .$row2['post_date']. '</p>
+                                                <div class="card-body">';
+
+                                    include '../2. notice_and_forum [IT18018356]/commentMenu.php';
+
+                                        echo       '<h5>' .$username2. '</h5> <p>'.$row2['post_time']. '  ' .$row2['post_date']. '</p>
                                                     <p>' .$row2['post_text']. '</p>
+                                                    <div id="'.$row2['post_poster_id'].$row2['post_id'].'" class="collapse">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <form action="../2. notice_and_forum [IT18018356]/editComment.php?id='.$_GET['id'].'" method="POST">
+                                                                    <h4>Edit Comment</h4> <br>
+                                                                    <textarea name="comment_txt"  rows="5" cols="50" required>' .$row2['post_text']. '</textarea><br>
+                                                                    <input type="text" name="id" hidden value="' .$row2['post_id'].'">
+                                                                    <input type="submit" value="Edit" class="btn btn-success">
+                                                                    <a class="btn btn-warning" href="" data-toggle="collapse" data-target="#'.$row2['post_poster_id'].$row2['post_id'].'">Cancel</a>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>';
-                                    }
+                                        }
                                     
                                     include '../2. notice_and_forum [IT18018356]/newComment.php';
                                     
