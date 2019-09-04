@@ -23,7 +23,7 @@
 				</li>
 
 				<li class="nav-item">
-				    ,<a href="../3.%20staff_management%20%5BIT18068610%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-tie"></i></span><span class="pcoded-mtext">Staffs</span></a>
+				    <a href="../3.%20staff_management%20%5BIT18068610%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-tie"></i></span><span class="pcoded-mtext">Staffs</span></a>
 				</li>
 
 				<li class="nav-item">
@@ -50,11 +50,11 @@
 				<li class="nav-item">
 				    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
 				</li>
-<!--
+
 				<li class="nav-item">
 				    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_staff_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
 				</li>
--->
+
 				<li class="nav-item">
 				    <a href="../2.%20notice_and_forum%20%5BIT18018356%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-comment-alt"></i></span><span class="pcoded-mtext">Forum</span></a>
 				</li>
@@ -185,8 +185,8 @@
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
                             <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                          <span><?php $user->get_fullname($Staff_ID); ?></span>
-                            <a href="../3.staff_management[IT18068610]/logout.php" class="dud-logout" title="Logout">
+                            <span><?php $user->get_fullname($Staff_ID); ?></span>
+                            <a href="../3. staff_management [IT18068610]/logout.php" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
                             </a>
                         </div>
