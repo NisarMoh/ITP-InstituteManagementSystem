@@ -8,82 +8,82 @@
 
 <!-- [ navigation menu ] start -->
 <nav class="pcoded-navbar menupos-fixed brand-blue">
-    <div class="navbar-wrapper">
-        <div class="navbar-content scroll-div">
-            <ul class="nav pcoded-inner-navbar">
-                <li class="nav-item pcoded-menu-caption">
-                    <label>Administration</label>
-                </li>
-                <li class="nav-item">
-                    <a href="../dashboard_for_staff/dashboard.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
-                </li>
+	<div class="navbar-wrapper">
+		<div class="navbar-content scroll-div" >
+			<ul class="nav pcoded-inner-navbar">
+				<li class="nav-item pcoded-menu-caption">
+					<label>Administration</label>
+				</li>
+				<li class="nav-item">
+				    <a href="../dashboard_for_staff/dashboard.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../4.%20student_management%20%5BIT18096576%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-graduate"></i></span><span class="pcoded-mtext">Students</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../4.%20student_management%20%5BIT18096576%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-graduate"></i></span><span class="pcoded-mtext">Students</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../3.%20staff_management%20%5BIT18068610%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-tie"></i></span><span class="pcoded-mtext">Staffs</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../3.%20staff_management%20%5BIT18068610%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-tie"></i></span><span class="pcoded-mtext">Staffs</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">Subjects</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">Subjects</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chalkboard"></i></span><span class="pcoded-mtext">Classrooms</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chalkboard"></i></span><span class="pcoded-mtext">Classrooms</span></a>
+				</li>
 
-                <li class="nav-item pcoded-menu-caption">
-                    <label>Tuition</label>
-                </li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Tuition</label>
+				</li>
 
-                <li class="nav-item pcoded-hasmenu">
-                    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book"></i></span><span class="pcoded-mtext">Assessments</span></a>
-                    <ul class="pcoded-submenu">
-                        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/template_for_staff_pages.php">Examination</a></li>
-                        <li><a href="#">Test</a></li>
+				<li class="nav-item pcoded-hasmenu">
+				    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book"></i></span><span class="pcoded-mtext">Assessments</span></a>
+				    <ul class="pcoded-submenu">
+				        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/template_for_staff_pages.php">Examination</a></li>
+				        <li><a href="#">Test</a></li>
                         <li><a href="#">Quiz</a></li>
-                    </ul>
-                </li>
+				    </ul>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_admin_mainmenu_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_staff_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="../2.%20notice_and_forum%20%5BIT18018356%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-comment-alt"></i></span><span class="pcoded-mtext">Forum</span></a>
-                </li>
+				<li class="nav-item">
+				    <a href="../2.%20notice_and_forum%20%5BIT18018356%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-comment-alt"></i></span><span class="pcoded-mtext">Forum</span></a>
+				</li>
 
-                <li class="nav-item pcoded-menu-caption">
-                    <label>Transcation</label>
-                </li>
-                <li class="nav-item">
-                    <a href="../8.%20transaction_management%20%5BIT14043338%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Fees</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-money-check-alt"></i></span><span class="pcoded-mtext">Wages</span></a>
-                </li>
+				<li class="nav-item pcoded-menu-caption">
+				    <label>Transcation</label>
+				</li>
+				<li class="nav-item">
+				    <a href="../8.%20transaction_management%20%5BIT14043338%5D/template_for_staff_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Fees</span></a>
+				</li>
+				<li class="nav-item">
+				    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-money-check-alt"></i></span><span class="pcoded-mtext">Wages</span></a>
+				</li>
 
 
-            </ul>
+			</ul>
 
-            <div class="card text-center">
-                <div class="card-block">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="feather icon-sunset f-40"></i>
-                    <h6 class="mt-3">Help?</h6>
-                    <p>Please contact us on our email for need any support</p>
-                    <a href="#!" target="_blank" class="btn btn-primary btn-sm text-white m-0">Support</a>
-                </div>
-            </div>
+			<div class="card text-center">
+				<div class="card-block">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<i class="feather icon-sunset f-40"></i>
+					<h6 class="mt-3">Help?</h6>
+					<p>Please contact us on our email for need any support</p>
+					<a href="#!" target="_blank" class="btn btn-primary btn-sm text-white m-0">Support</a>
+				</div>
+			</div>
 
-        </div>
-    </div>
+		</div>
+	</div>
 </nav>
 <!-- [ navigation menu ] end -->
 
@@ -185,8 +185,8 @@
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
                             <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                            <span><?php $user->get_fullname($Staff_ID); ?></span>
-                            <a href="../3. staff_management [IT18068610]/logout.php" class="dud-logout" title="Logout">
+                            <span>John Doe</span>
+                            <a href="auth-signin.html" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
                             </a>
                         </div>

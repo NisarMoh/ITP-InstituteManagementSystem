@@ -42,8 +42,8 @@
                         <div class="row">
 
                             <div class="col-sm-12">
-                                <div class="card">
-                                    <div class="col-sm-4">
+
+
 
                                         <?php
                                         $mysqli = new mysqli('localhost', 'username', 'password', 'institute_management_system')
@@ -54,15 +54,15 @@
                                         <div class="row justify-content-center">
 
 
-
-                                                <table class="table">
-                                                    <thead class="table">
+                                                <div class="float-none" style="width: 80%">
+                                                <table class="table w-100" >
+                                                    <thead>
                                                     <tr>
-                                                        <th>Subject</th>
-                                                        <th>References</th>
-                                                        <th>Description</th>
-                                                        <th>Amount</th>
-                                                        <th colspan="2">Action</th>
+                                                        <th class="w-25">Subject</th>
+                                                        <th class="w-25">References</th>
+                                                        <th class="w-25">Description</th>
+                                                        <th class="w-25">Amount</th>
+                                                        <th class="w-25" colspan="2">Action</th>
                                                     </tr>
                                                     </thead>
 
@@ -70,11 +70,11 @@
                                                     while ($row = $result->fetch_assoc()): ?>
 
                                                         <tr>
-                                                            <td height="100"><?php echo $row['subject']; ?></td>
-                                                            <td height="100"><?php echo $row['reference']; ?></td>
-                                                            <td height="100"><?php echo $row['decription']; ?></td>
-                                                            <td height="100"><?php echo $row['amount']; ?></td>
-                                                            <td height="100">
+                                                            <td height="100" style=" vertical-align: middle;" ><?php echo $row['subject']; ?></td>
+                                                            <td height="100" style=" vertical-align: middle;" ><?php echo $row['reference']; ?></td>
+                                                            <td height="100" style=" vertical-align: middle;" ><?php echo $row['decription']; ?></td>
+                                                            <td height="100" style=" vertical-align: middle;" ><?php echo $row['amount']; ?></td>
+                                                            <td height="100" style=" vertical-align: middle;" >
                                                                 <a href="subject_update_subject.php" ?edit=<?php echo  $row['sub_id']; ?>"
                                                         class=" btn btn-info"> Edit</a>
                                                                 <a href="subject_add.php?delete=<?php echo $row['sub_id']; ?>"
@@ -87,6 +87,7 @@
                                                     <?php endwhile; ?>
 
                                                 </table>
+                                                </div>
 
 
 
@@ -101,9 +102,9 @@
                                         ?>
 
 
-                                    </div>
+
                                 </div>
-                            </div>
+
                         </div>
 
 

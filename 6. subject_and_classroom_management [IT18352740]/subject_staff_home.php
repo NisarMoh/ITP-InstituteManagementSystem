@@ -63,16 +63,10 @@
 
                                     </a>
 
-
-                                    <form action="" method="post">
-
-                                    </form>
-
-
-
-
+                                    <!--<img src="../assets/images/IT18352740/abc.jpg" alt = "hhhhhhhhhhhhhh" width="30px" height="30px"/>-->
                                     <!-- [ fixed-layout ] end -->
                                 </div>
+
                             </div>
                         </div>
                         <!-- [ Main Content ] end -->

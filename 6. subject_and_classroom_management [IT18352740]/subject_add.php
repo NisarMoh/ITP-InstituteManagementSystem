@@ -28,3 +28,4 @@ VALUES ('$subject_add', '$reference_add', '$decription_add', '$amount_add')")
 
            header('location: subject_view_subject.php');
        }
+

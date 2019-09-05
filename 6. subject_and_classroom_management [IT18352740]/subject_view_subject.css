@@ -13,7 +13,10 @@ div.col-sm-4 {
 
 
 .table{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
+}
+.center{
+    display:flex;
+    justify-content:center
 }
