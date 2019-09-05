@@ -7,8 +7,18 @@ if (isset($_REQUEST['submit'])) {
 	extract($_REQUEST);
 	$login = $user->check_login($emailusername, $password);
 	if ($login) {
-		// Registration Success
-		header("location:template_for_staff_pages.php");
+		if (($_SESSION['Administrator'] == "True")) {
+			
+			header("location:template_for_staff_pages.php");
+		}
+		
+		
+		else {
+			header("location:../dashboard_for_staff/tutor_view.php");
+			
+		}
+		//Registration Success
+
 	} else {
 		// Registration Failed
 		echo 'Wrong username or password';
