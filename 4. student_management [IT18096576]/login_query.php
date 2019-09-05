@@ -5,7 +5,9 @@
 		$conn = new db_class();
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+		$password=md5($password);
 		$get_user = $conn->login($username, $password);
+		
 		
 		if($get_user['count'] > 0){
 			session_start();

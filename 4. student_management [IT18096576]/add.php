@@ -17,7 +17,7 @@ if(isset($_POST['add'])) {
     $username = $crud->escape_string($_POST['username']);
     $password = $crud->escape_string($_POST['password']);
 
-    //$password=md5($password);
+    $password=md5($password);
     //insert data to database
     $sql = "INSERT INTO student (firstname, lastname, address, age, email, contactno, username, password) VALUES ('$firstname','$lastname','$address','$age','$email','$contactno','$username','$password')";
  

@@ -11,6 +11,7 @@
                 $contactno = $_POST['contactno'];
                 $email = $_POST['email'];
 				$address = $_POST['address'];
+				$password=md5($password);
 				
                 
 		$conn->save($username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address);

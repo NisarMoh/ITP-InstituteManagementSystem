@@ -19,6 +19,7 @@ if(isset($_POST['edit'])) {
     $contactno = $crud->escape_string($_POST['contactno']);
     $username = $crud->escape_string($_POST['username']);
     $password = $crud->escape_string($_POST['password']);
+    $password=md5($password);
  
     //update data
     $sql = "UPDATE student SET firstname = '$firstname', lastname = '$lastname', address = '$address', age = '$age', email = '$email', contactno = '$contactno', username = '$username', password = '$password' WHERE id = '$id'";

@@ -16,7 +16,7 @@
 			<hr style = "border-top:1px dotted #000;"/>
 			<form method = "POST" action = "save_query.php">
 
-			"/^[a-zA-Z0-9_]*$/"
+			
 				<div class="form-group">
 					Username:<input type = "text" placeholder = "Username"  name = "username" class = "form-control" required/>
 				</div>

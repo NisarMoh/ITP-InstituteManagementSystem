@@ -48,10 +48,7 @@
                                 <div class="col-xl-12">
                                     <div class="card">
                                     
-                                    <?php
-                                              //  include 'home.php';
-                                    ?>
-
+                                    
 
                                     <?php
                                                        include 'fetch.php';
@@ -59,19 +56,14 @@
 											?>
                                         <div class="card-body">
                                                   
-                                            <p style="text-align:center;" ><h4 style="text-align:center ;"> 
-                                            Username: <br><?php echo $row['username']; ?> <br>
-                                            FullName: <br><?php echo $row['firstname'].' '.$row['lastname']; ?> <br>
-                                            Email:<br><?php echo $row['email']; ?><br>
-                                            Contactno:<br><?php echo $row['contactno']; ?><br>
-                                            Age:<br><?php echo $row['age']; ?>
-                                            
-                                            
-                                            </h4> 
-                                            
-                                            
-                                            
-                                            
+                                            <p style="text-align:center;" > 
+                                            <h4>Username:<input type="text" disabled placeholder="<?php echo $row['username']; ?> "><br></h4>
+                                            <h4>FullName: <input type="text" disabled placeholder="<?php echo $row['firstname'].' '.$row['lastname']; ?>"> <br></h4> 
+                                            <h4>Email:<input type="text" disabled placeholder="<?php echo $row['email']; ?>"><br></h4> 
+                                            <h4>Contactno: <input type="text" disabled placeholder="<?php echo $row['contactno']; ?>"><br></h4> 
+                                            <h4>Age: <input type="text"disabled placeholder="<?php echo $row['age']; ?>"><br></h4> 
+                                            <h4>Address: <input type="text"disabled placeholder="<?php echo $row['address']; ?>"><br></h4> 
+                                             
                                             </p>
                                             
                                         </div>

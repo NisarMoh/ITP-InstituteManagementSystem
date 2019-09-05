@@ -100,6 +100,7 @@
 						<label style="position:relative; top:7px;">Password:</label>
 					</div>
 					<div class="col-lg-10">
+							$password=md5($password);
 						<input type="text" name="password" class="form-control" value="<?php echo $row['password']; ?>">
 					</div>
 				</div>

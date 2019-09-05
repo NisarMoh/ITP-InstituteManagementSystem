@@ -23,8 +23,11 @@
  
 		public function save($username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address){
 			
+			
 			$stmt = $this->conn->prepare("INSERT INTO `student` (username, password, firstname, lastname, gender, age, contactno, email, address) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)") or die($this->conn->error);
+			//$password=md5($password);
 			$stmt->bind_param("sssssssss", $username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address);
+			
 			if($stmt->execute()){
 				$stmt->close();
 				$this->conn->close();
@@ -35,6 +38,7 @@
 		public function login($username, $password){
 		
 			$stmt = $this->conn->prepare("SELECT * FROM `student` WHERE `username` = '$username' && `password` = '$password'") or die($this->conn->error);
+			//$password=md5($password);
 			if($stmt->execute()){
 				$result = $stmt->get_result();
 				$valid = $result->num_rows;
@@ -44,6 +48,13 @@
 					'count'=>$valid
 				);
 			}
+		}
+
+		public function	getfullName1($id){
+			$sql4="SELECT username FROM student WHERE id='$id'";
+			$result=mysqli_query($this->conn,$sql4);
+			$userdata=mysql_fetch_array($result);
+			echo $userdata['username'];
 		}
  
 		public function user_account($id){
