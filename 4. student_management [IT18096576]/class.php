@@ -22,6 +22,7 @@
 		}
  
 		public function save($username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address){
+			
 			$stmt = $this->conn->prepare("INSERT INTO `student` (username, password, firstname, lastname, gender, age, contactno, email, address) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)") or die($this->conn->error);
 			$stmt->bind_param("sssssssss", $username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address);
 			if($stmt->execute()){
@@ -32,7 +33,7 @@
 		}
  
 		public function login($username, $password){
-			//$password=md5($password);
+		
 			$stmt = $this->conn->prepare("SELECT * FROM `student` WHERE `username` = '$username' && `password` = '$password'") or die($this->conn->error);
 			if($stmt->execute()){
 				$result = $stmt->get_result();
@@ -56,5 +57,7 @@
 				);
 			}	
 		}
+
+		
 	}	
 ?>

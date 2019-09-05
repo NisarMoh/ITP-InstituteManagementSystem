@@ -23,8 +23,8 @@
 			
 
 			<?php  
-			include 'crudadd.php'
+			//include 'crudadd.php'
 			?>
-		
+		 
 </body>
 </html>

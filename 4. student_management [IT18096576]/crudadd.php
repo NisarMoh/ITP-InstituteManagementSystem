@@ -21,7 +21,7 @@
 
 </head>
 <body>
-<a href = "logout.php" >Logout</a>
+
 <div class="container">
 	<h1 class="page-header text-center">Student Management</h1>
 	<div class="row">

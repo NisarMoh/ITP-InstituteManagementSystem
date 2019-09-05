@@ -10,7 +10,8 @@
                 $age = $_POST['age'];
                 $contactno = $_POST['contactno'];
                 $email = $_POST['email'];
-                $address = $_POST['address'];
+				$address = $_POST['address'];
+				
                 
 		$conn->save($username, $password, $firstname, $lastname, $gender, $age, $contactno, $email, $address);
 		echo '<script>alert("Successfully saved!")</script>';
