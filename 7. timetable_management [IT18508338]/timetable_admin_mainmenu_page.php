@@ -4,6 +4,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <?php include '../dashboard_for_staff/head.inc.php' ?>
 </head>
 
@@ -39,37 +41,61 @@
                             <!-- [ breadcrumb ] end -->
 
                             <!-- [ Main Content ] start -->
-                            <div class="row">
-                                <!-- [ fixed-layout ] start -->
-                                <div class="col-sm-12">
-                                    <div class="card">
-
-                                        <!--[button to navigate to the insert timetable function] start-->
-                                        <div class="card-body">
-                                            <a href="timetable_admin_insert_main_page.php"><button type = "button" class = "btn-success btn-lg" width="" style="width:100%">Add New Timetables</button></a>
-                                        </div>
+                                        <!--[button to navigate to the insert timetable function] end-->
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="card text-white bg-success ">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title text-light"><a class="text-light" href="timetable_admin_insert_main_page.php"> Add New timetables</a></h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title text-white"><a href="timetable_admin_insert_main_page.php"><i class="fas fa-user-plus text-light"></i></a></h1>
+                                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
                                         <!--[button to navigate to the insert timetable function] end-->
                                         <!--[button to navigate to the update timetable function] start-->
-                                        <div class="card-body">
-                                            <a href="timetable_admin_update_main_page.php"><button type = "button" class = "btn-warning btn-lg" style="width:100%">Update Timetables</button></a>
-                                        </div>
+                                            <div class="col-sm-4">
+                                                <div class="card text-white bg-warning ">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title text-light"><a class="text-light" href="timetable_admin_update_main_page.php">Update Timetables</a></h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title text-light"><a href="timetable_admin_update_main_page.php"><i class="fas fa-user-edit"></i></a></h1>
+
+                                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
                                         <!--[button to navigate to the update timetable function] end-->
                                         <!--[button to navigate to the delete timetable function] start-->
-                                        <div class="card-body">
-                                            <a href="timetable_admin_delete_page.php"><button type = "button" class = "btn-danger btn-lg" width="" style="width:100%">Delete Timetables</button></a>
-                                        </div>
+                                            <div class="col-sm-4">
+                                                <div class="card text-white bg-danger ">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title text-light"><a class="text-light" href="timetable_admin_delete_page.php">Delete Timetables</a></h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title text-light"><a href="timetable_admin_delete_page.php"><i class="fas fa-user-times"></i></a></h1>
+                                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
                                         <!--[button to navigate to the delete timetable function] end-->
                                         <!--[button to navigate to the view timetable function] start-->
-                                        <div class="card-body">
-                                            <a href="timetable_admin_view_page.php"><button type = "button" class = "btn-info btn-lg" width="" style="width:100%">View All Timetables</button></a>
-                                        </div>
+                                            <div class="col-sm-4">
+                                                <div class="card text-white bg-info ">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title text-light"><a class="text-light" href="timetable_admin_view_page.php">View All Timetables</a></h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title text-light"><a href="timetable_admin_view_page.php"><i class="fas fa-user-plus"></i></a></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         <!--[button to navigate to the view timetable function] end-->
 
-                                    </div>
-                                </div>
-                                <!-- [ fixed-layout ] end -->
-                            </div>
-                            <!-- [ Main Content ] end -->
+                                       </div>
 
                         </div>
                     </div>
