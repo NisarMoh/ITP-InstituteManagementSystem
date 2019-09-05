@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'username', 'password', 'institute_management_system')
+$mysqli = new mysqli('localhost', 'root', '', 'institute_management_system')
 or die(mysqli_errno($mysqli));
 $output = '';
 if (isset($_POST['search'])){

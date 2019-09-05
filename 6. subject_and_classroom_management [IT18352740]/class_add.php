@@ -2,7 +2,7 @@
 
 
 
-$mysqli = new mysqli('localhost', 'username', 'password', 'institute_management_system')
+$mysqli = new mysqli('localhost', 'root', '', 'institute_management_system')
 or die(mysqli_errno($mysqli));
 if (isset($_POST['btn_class_add'])){
 

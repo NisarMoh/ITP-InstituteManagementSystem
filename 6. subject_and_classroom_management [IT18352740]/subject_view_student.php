@@ -47,7 +47,7 @@
                                             <div class="col-sm-12">
 
                                                 <?php
-                                                $mysqli = new mysqli('localhost', 'username', 'password', 'institute_management_system')
+                                                $mysqli = new mysqli('localhost', 'root', '', 'institute_management_system')
                                                 or die(mysqli_error($mysqli));
                                                 $result = $mysqli->query("SELECT * FROM subject") or die($mysqli->error);
                                                 ?>

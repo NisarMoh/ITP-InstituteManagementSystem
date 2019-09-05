@@ -35,13 +35,13 @@
                 </li>
 
                 <li class="nav-item pcoded-hasmenu">
-                    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">My Subjects</span></a>
-                    <ul class="pcoded-submenu">
+                    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">My Subjects</span></a>
+                    <!--<ul class="pcoded-submenu">
                         <li><a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_student_pages.php" target="_blank">Subject 1</a></li>
                         <li><a href="#" target="_blank">Subject 2</a></li>
                         <li><a href="#" target="_blank">Subject 3</a></li>
                         <li><a href="#" target="_blank">Subject 4</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
 
                 <li class="nav-item pcoded-hasmenu">
