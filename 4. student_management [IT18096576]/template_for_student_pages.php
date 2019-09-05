@@ -1,9 +1,13 @@
+
+
 <?php include '../homepage_for_student/session_for_student.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php include '../homepage_for_student/head.inc.php' ?>
+
+    p {color: red;}
 </head>
 
 <body>
@@ -23,28 +27,53 @@
                                         <div class="col-md-12">
                                             <div class="page-header-title">
 											
-											<?php
-														include 'crudadd.php';
-											?>
+											
                                                 <!-- [ IMS: page title ] -->
-                                                <h5 class="m-b-10">Student management</h5>
+                                                <h5 class="m-b-10">Student Profile</h5>
                                             </div>
                                             <ul class="breadcrumb">
                                                 <!-- [ IMS: breadcrumb ] -->
                                                 <li class="breadcrumb-item"><a href="../homepage_for_student/homepage.php"><i class="feather icon-home"></i></a></li>
-                                                <li class="breadcrumb-item"><a href="#!">Student management</a></li>
+                                                <li class="breadcrumb-item"><a href="#!">Student Management</a></li>
+                                            
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                           
                             <!-- [ Main Content ] start -->
                             <div class="row">
                                 <!-- [ horizontal-layout ] start -->
-                                <div class="col-sm-12">
+                                <div class="col-xl-12">
                                     <div class="card">
+                                    
+                                    <?php
+                                              //  include 'home.php';
+                                    ?>
+
+
+                                    <?php
+                                                       include 'fetch.php';
+                                                      // include 'action_modal.php'
+											?>
                                         <div class="card-body">
-                                            <p>Empty Page</p>
+                                                  
+                                            <p style="text-align:center;" ><h4 style="text-align:center ;"> 
+                                            Username: <br><?php echo $row['username']; ?> <br>
+                                            FullName: <br><?php echo $row['firstname'].' '.$row['lastname']; ?> <br>
+                                            Email:<br><?php echo $row['email']; ?><br>
+                                            Contactno:<br><?php echo $row['contactno']; ?><br>
+                                            Age:<br><?php echo $row['age']; ?>
+                                            
+                                            
+                                            </h4> 
+                                            
+                                            
+                                            
+                                            
+                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
