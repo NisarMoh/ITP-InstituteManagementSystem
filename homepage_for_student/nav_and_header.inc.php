@@ -1,4 +1,6 @@
 <!-- [ Pre-loader ] start -->
+
+
 <div class="loader-bg">
     <div class="loader-track">
         <div class="loader-fill"></div>
@@ -158,7 +160,7 @@
                         <div class="dropdown-menu dropdown-menu-right profile-notification">
                             <div class="pro-head">
                                 <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-                                <span>John Doe</span>
+                                <span> </span>
                                 <a href="../4. student_management [IT18096576]/logout.php" class="dud-logout" title="Logout">
                                     <i class="feather icon-log-out"></i>
                                 </a>
