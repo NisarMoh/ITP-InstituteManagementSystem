@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
@@ -19,19 +19,19 @@
 
 
 	<div class="container ">
-		<h1 class="well card bg-warning text-light text-center"> Registration (admin)</h1>
+		<h1 class="well   text-light text-center"> Registration </h1>
 		<div class="col-lg-12 well  card">
 			<div class="row">
 				<form method="post" name="form1" action="add.php">
 					<div class="col-sm-12 ">
-						<div class="form-group">
+						<div class="  form-group">
 							<label>User Name :</label><br>
 							<input type="text" name="cpass" required="" class="form-Control" />
 						</div>
 						<div class="row">
-							<div class="col-sm-6 form-group">
+							<div class="col-sm-6 form-group ">
 								<label>First Name :</label>
-								<input type="text" name="fullname" required="" class="form-Control" />
+								<input type="text" name="fullname" required="" class="nav-item form-Control" />
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Last Name :</label>

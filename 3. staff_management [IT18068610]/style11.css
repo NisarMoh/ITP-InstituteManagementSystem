@@ -4,13 +4,13 @@
 
 
 body {
-    background: #9053c7;
-  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: #3776ff;
+background: -webkit-linear-gradient(-135deg, #561cf5, #4158d0);
+background: -o-linear-gradient(-135deg, #3154f3, #5470ff);
+background: -moz-linear-gradient(-135deg, #3e16f5, #395afd);
+background: linear-gradient(-135deg, #3c1cf1, #4060ff);
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

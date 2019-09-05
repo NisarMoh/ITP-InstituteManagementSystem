@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Add Data</title>
+    <title>Add Staff</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
             echo 'Please provide proper email.';
         } else {
             // if all the fields are filled (not empty) 
-
+            $upass=md5($upass);
             //insert data to database    
             $result = $crud->execute("INSERT INTO staff (Full_Name, Last_Name, Email,NIC,Password,User_Name,Qualification,Salary,Ethnic,Religion,Civil_Status,Address,Gender,DateOfBirth,Phone_Number,Administrator,Tutor,Cashier) VALUES 
             ('$fullname', '$lastname', '$email','$nic','$upass','$cpass','$qualification','$salary','$ethnic','$religion','$civilstatus','$address','$gender','$dob','$phonenumber','$checkadmin','$checktutor','$checkcashier')");
