@@ -63,11 +63,29 @@
 
                                     </a>
 
+                                    <div  style="width: 40%"  class="searchbar">
+                                        <input class="form-control" type="text" placeholder="Search for subject">
+                                        <span class="input-group-addon">
+
+                                      </span>
+                                    </div>
+
+
+
+
+
                                     <!--<img src="../assets/images/IT18352740/abc.jpg" alt = "hhhhhhhhhhhhhh" width="30px" height="30px"/>-->
                                     <!-- [ fixed-layout ] end -->
                                 </div>
 
+
+
                             </div>
+
+
+
+
+
                         </div>
                         <!-- [ Main Content ] end -->
 

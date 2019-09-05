@@ -75,7 +75,7 @@
                                                             <td height="100" style=" vertical-align: middle;" ><?php echo $row['decription']; ?></td>
                                                             <td height="100" style=" vertical-align: middle;" ><?php echo $row['amount']; ?></td>
                                                             <td height="100" style=" vertical-align: middle;" >
-                                                                <a href="subject_update_subject.php" ?edit=<?php echo  $row['sub_id']; ?>"
+                                                                <a href="subject_add_subject.php?edit=<?php echo  $row['sub_id']; ?>"
                                                         class=" btn btn-info"> Edit</a>
                                                                 <a href="subject_add.php?delete=<?php echo $row['sub_id']; ?>"
                                                                    class="btn btn-danger">Delete</a>

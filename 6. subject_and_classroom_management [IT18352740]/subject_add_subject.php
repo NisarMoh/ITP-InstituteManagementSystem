@@ -45,7 +45,7 @@
 
                             <!-- [ fixed-layout ] start -->
 
-                            <?php require_once 'subject_add.php'; ?>
+
 
                             <div class="col-sm-12">
                                 <div class="card">
@@ -58,32 +58,32 @@
                                         <div class="subject_add">
                                             <label>Subject</label>
 
-                                            <input type="text" class="form-control" placeholder="" name="subject_add" required>
+                                            <input type="text" class="form-control" value="<?php echo $subject_add; ?>" placeholder="" name="subject_add" required>
 
                                         </div>
 
                                         <div class="reference_add">
 
                                             <label for="exampleFormControlTextarea1">References</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" maxlength="200" name="reference_add" required></textarea>
+                                            <textarea class="form-control" value="<?php echo $reference_add; ?>" id="exampleFormControlTextarea1" rows="2" maxlength="200" name="reference_add" required></textarea>
 
                                         </div>
 
                                         <div class="decription_add">
                                             <label for="exampleFormControlTextarea1">Description</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="decription_add" maxlength="500" required></textarea>
+                                            <textarea class="form-control" value ="<?php echo $decription_add; ?> " id="exampleFormControlTextarea1" rows="3" name="decription_add" maxlength="500" required></textarea>
                                         </div>
 
                                         <div class="amount_add">
                                             <label>Add Amount</label>
-                                            <input type="text" class="form-control" placeholder="" name="amount_add" maxlength="6" required  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+                                            <input type="text" class="form-control" value ="<?php echo $amount_add; ?> " placeholder="" name="amount_add" maxlength="6" required  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
                                         </div>
 
 
-                                                <div class="btn_add">
-                                                    <button type = "submit" class = "btn btn-primary" name="btn_subject_add">Submit</button>
-                                                </div>
 
+                                            <div class="btn_add">
+                                                <button type = "submit" class = "btn btn-primary" name="btn_subject_add">Submit</button>
+                                            </div>
 
 
 

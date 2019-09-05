@@ -37,6 +37,11 @@
                             </div>
                         </div>
                         <!-- [ Main Content ] start -->
+
+
+
+                       
+
                         <div class="row">
                             <!-- [ horizontal-layout ] start -->
                             <div class="col-sm-12">
@@ -51,6 +56,7 @@
                                                 or die(mysqli_error($mysqli));
                                                 $result = $mysqli->query("SELECT * FROM subject") or die($mysqli->error);
                                                 ?>
+
 
 
                                                 <div class="row justify-content-center">

@@ -21,3 +21,10 @@ div.card_subject{
     margin-left: auto;
 }
 
+div.searchbar{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
