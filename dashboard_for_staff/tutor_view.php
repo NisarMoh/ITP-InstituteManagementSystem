@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<?php include '../homepage_for_student/nav_and_header.inc.php' ?>
+<?php include 'nav_header_tutor.php' ?>
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
@@ -67,4 +67,3 @@
 </body>
 
 </html>
-
