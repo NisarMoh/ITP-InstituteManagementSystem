@@ -1,3 +1,20 @@
+<?php
+    /*
+     * still under development
+     * IT18508338
+     */
+
+    include '../7. timetable_management [IT18508338]/mysql_db_connection.inc.php';
+    global $Staff_ID;
+    global $conn;
+    $sql = "SELECT Full_Name FROM staff WHERE Staff_ID='$Staff_ID';";
+    $result = $conn->query($sql);
+    $temp = "";
+    while ($row = $result->fetch_assoc()) {
+        $temp = $row['Full_Name'];
+    }
+    $timetableURL = "'Location: ../7. timetable_management [IT18508338]/controllers/ViewRelevantStaffTimetableController.php?val='.$temp";
+?>
 
 <!-- [ Pre-loader ] start -->
 <div class="loader-bg">
@@ -37,7 +54,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_student_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/controllers/ViewRelevantStaffTimetableController.php?val=<?php echo $temp?>" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
                 </li>
 
                 <li class="nav-item">

@@ -1,5 +1,13 @@
 <?php
 
+    /*
+     * still under development
+     * $t = $_GET['val'];
+    $para = strip_tags($t);
+    echo $para;
+    */
+
+
     //inclusion of php scripts
     include dirname(__FILE__).'/../models/Timetable.php';
     include dirname(__FILE__).'/../models/TimetableCell.php';
@@ -11,7 +19,7 @@
     //viewAllTimetables() method called - returns an array containing the timetable ids
     $resList = $vrst->viewAllTimetables();
     //array object declared to store ids and thu avoid redundancy during validation
-    $res = [];
+    $resTemp = [];
     //variable to store the count of $res array
     $resCount = 0;
     //variable that stores the count of the $resList(number of timetables)
@@ -35,16 +43,21 @@
                 $tcvsController->viewAllTimetableCells(TimetableCell::getTimeId(),$l,$startTime);
 
                 //if the current tutors name is contained somewhere in the $k timetable this if statement will be true
-               if(strcmp("c",TimetableCell::getTutorId())==0){
-                    //the id of the timetble $k will be stored here
+               if(strcmp("sfsf",TimetableCell::getTutorId())==0){
+                    //the id of the timetable $k will be stored here
                     $resIdArray[] = TimetableCell::getTimeId();
                     //the $resIdArray[] will contain the same id more than once,so make this wold make it contain only unique ids
-                    $res = array_unique($resIdArray);
+                    $resTemp = array_unique($resIdArray);
                     //count of the $res array to be used in the for loop in the timetable_staff_page
-                    $resCount = count($res);
+                    $resCount = count($resTemp);
 
                 }
             }
         }
     }
+
+    $c = $resCount;
+
+    $url = "../timetable_staff_page.php?count=".$c;
+    header('Location:'.$url);
 
