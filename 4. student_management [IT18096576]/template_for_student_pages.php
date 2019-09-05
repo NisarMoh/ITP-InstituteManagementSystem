@@ -57,12 +57,12 @@
                                         <div class="card-body">
                                                   
                                             <p style="text-align:center;" > 
-                                            <h4>Username:<input type="text" disabled placeholder="<?php echo $row['username']; ?> "><br></h4>
-                                            <h4>FullName: <input type="text" disabled placeholder="<?php echo $row['firstname'].' '.$row['lastname']; ?>"> <br></h4> 
-                                            <h4>Email:<input type="text" disabled placeholder="<?php echo $row['email']; ?>"><br></h4> 
-                                            <h4>Contactno: <input type="text" disabled placeholder="<?php echo $row['contactno']; ?>"><br></h4> 
-                                            <h4>Age: <input type="text"disabled placeholder="<?php echo $row['age']; ?>"><br></h4> 
-                                            <h4>Address: <input type="text"disabled placeholder="<?php echo $row['address']; ?>"><br></h4> 
+                                            <h4>Username:       <input type="text" class="form-control" disabled placeholder="<?php echo $row['username']; ?> ">  </h4>
+                                            <h4>FullName:       <input type="text" class="form-control" disabled placeholder="<?php echo $row['firstname'].' '.$row['lastname']; ?>"></h4> 
+                                            <h4>Email:          <input type="text" class="form-control" disabled placeholder="<?php echo $row['email']; ?>"></h4> 
+                                            <h4>Contactno:      <input type="text" class="form-control" disabled placeholder="<?php echo $row['contactno']; ?>"></h4> 
+                                            <h4>Age:            <input type="text" class="form-control" disabled placeholder="<?php echo $row['age']; ?>"></h4> 
+                                            <h4>Address:        <input type="text" class="form-control" disabled placeholder="<?php echo $row['address']; ?>"></h4> 
                                              
                                             </p>
                                             
