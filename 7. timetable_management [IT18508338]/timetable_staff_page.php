@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <?php include '../dashboard_for_staff/head.inc.php' ?>
+    <?php include '../homepage_for_student/head.inc.php' ?>
     <?php include dirname(__FILE__).'/controllers/ViewRelevantStaffTimetableController.php' ?>
 </head>
 
@@ -130,7 +130,7 @@
     </div>
     <!-- [ Main Content ] end -->
 
-    <?php include'../dashboard_for_staff/req_js.inc.php' ?>
+    <?php /*include'../dashboard_for_staff/req_js.inc.php' */?>
 </body>
 
 </html>
