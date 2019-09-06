@@ -28,10 +28,9 @@ if(isset($_POST['add'])) {
         $_SESSION['message'] = 'Cannot add member';
     }
  
-    header('location: template_for_student_pages.php');
+    header('location: studentcrud.php');
 }
 else{
     $_SESSION['message'] = 'Fill up add form first';
     header('location: index.php');
 }
-?>

@@ -1,31 +1,28 @@
 <?php
 //start session
 session_start();
- 
+
 //including the database connection file
 include_once('Crud.php');
- 
-if(isset($_GET['id'])){
- 
+
+if (isset($_GET['id'])) {
+
     //getting the id
     $id = $_GET['id'];
- 
+
     $crud = new Crud();
- 
+
     //delete data
     $sql = "DELETE FROM student WHERE id = '$id'";
- 
-    if($crud->execute($sql)){
+
+    if ($crud->execute($sql)) {
         $_SESSION['message'] = 'Member deleted successfully';
-    }
-    else{
+    } else {
         $_SESSION['message'] = 'Cannot delete member';
     }
- 
-    header('location: template_for_student_pages.php');
-}
-else{
+
+    header('location: studentcrud.php');
+} else {
     $_SESSION['message'] = 'Select user to delete first';
     header('location: index.php');
 }
-?>
