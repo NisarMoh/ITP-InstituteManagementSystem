@@ -43,26 +43,4 @@
                             <!-- [ fixed-layout ] start -->
                             <div class="col-sm-12">
                                 <div class="card">
-                                    <div class="card-body">
-
-
-                                <form action = "mp.php" method = "post">
-
-                                     StudentID <input type="text" name="Student ID" value=""><br>
-                                    Subject ID <input  type="text" name="Subject ID" value=""><br>
-                                    Amount <input type="text" name="Amount" value=""><br>
-                                    Date <input type="date" name="Date" value=""><br>
-                                    Month <input type="month" name="Month" value=""> <br>
-                                    Year <input type="text" name="Year" value=""> <br>
-                                    Cashier ID <input type="text" name="Cashier ID" value=""><br>
-
-
-
-
-                                      <button type = "submit" >Save</button>
-
-                                </form>
-
-
-
-
+                                    <div class="card-b

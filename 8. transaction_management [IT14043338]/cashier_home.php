@@ -44,12 +44,24 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
-                                       <a /><button>Make Student Payment</button>
-                                        <button>Edit Student Payment</button>
-                                        <button>Delete Student Payment</button>
-                                        <button>Make Staff Payment</button>
-                                        <button>Edit Staff Payment</button>
-                                        <button>Delete Staff Payment</button>
+                                        <form action="../make_student_payment.php">
+                                            <input type="submit" value="Make Student Payment" />
+                                        </form>
+                                        <form action="edit_student_payment.php">
+                                            <input type="submit" value="edit Student Payment" />
+                                        </form>
+                                        <form action="delete_student_payment.php">
+                                            <input type="submit" value="Delete Student Payment" />
+                                        </form>
+                                        <form action="staff_salary_payment.php">
+                                            <input type="submit" value="Staff Salary Payment" />
+                                        </form>
+                                        <form action="update_salary_payment.php">
+                                            <input type="submit" value="Update Staff Salary" />
+                                        </form>
+                                        <form action="delete_salary_payment.php">
+                                            <input type="submit" value="Delete Salary Payment" />
+                                        </form>
 
                                     </div>
                                 </div>
