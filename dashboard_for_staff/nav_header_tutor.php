@@ -1,21 +1,3 @@
-<?php
-    /*
-     * still under development
-     * IT18508338
-     */
-
-    include '../7. timetable_management [IT18508338]/mysql_db_connection.inc.php';
-    global $Staff_ID;
-    global $conn;
-    $sql = "SELECT Full_Name FROM staff WHERE Staff_ID='$Staff_ID';";
-    $result = $conn->query($sql);
-    $temp = "";
-    while ($row = $result->fetch_assoc()) {
-        $temp = $row['Full_Name'];
-    }
-    $timetableURL = "'Location: ../7. timetable_management [IT18508338]/controllers/ViewRelevantStaffTimetableController.php?val='.$temp";
-?>
-
 <!-- [ Pre-loader ] start -->
 <div class="loader-bg">
     <div class="loader-track">
@@ -35,13 +17,13 @@
                 </li>
 
                 <li class="nav-item pcoded-hasmenu">
-                    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">My Subjects</span></a>
-                    <!--<ul class="pcoded-submenu">
+                    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">My Subjects</span></a>
+                    <ul class="pcoded-submenu">
                         <li><a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/template_for_student_pages.php" target="_blank">Subject 1</a></li>
                         <li><a href="#" target="_blank">Subject 2</a></li>
                         <li><a href="#" target="_blank">Subject 3</a></li>
                         <li><a href="#" target="_blank">Subject 4</a></li>
-                    </ul>-->
+                    </ul>
                 </li>
 
                 <li class="nav-item pcoded-hasmenu">
@@ -54,7 +36,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/controllers/ViewRelevantStaffTimetableController.php?val=<?php echo $temp?>" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_staff_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
                 </li>
 
                 <li class="nav-item">

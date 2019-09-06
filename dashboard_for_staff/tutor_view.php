@@ -22,13 +22,13 @@
                                     <div class="col-md-12">
                                         <div class="page-header-title">
                                             <!-- [ IMS: page title ] -->
-                                            <h5 class="m-b-10">Template For Student Pages</h5>
+                                            <h5 class="m-b-10">Course Web</h5>
                                         </div>
                                         <ul class="breadcrumb">
                                             <!-- [ IMS: breadcrumb ] -->
-                                            <li class="breadcrumb-item"><a href="homepage.php"><i class="feather icon-home"></i></a></li>
+                                            <li class="breadcrumb-item"><a href="#"><i class="feather icon-home"></i></a></li>
                                             <li class="breadcrumb-item"><a href="#!">Page Layout</a></li>
-                                            <li class="breadcrumb-item"><a href="#!">Template Page</a></li>
+                                            <li class="breadcrumb-item"><a href="#!">   </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@
                         </div>
                         <!-- [ Main Content ] start -->
                         <div class="row">
-                            <!-- [ horizontal-layout ] start -->
+                            <!-- [ horizontal-layout ] start
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -49,7 +49,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- [ horizontal-layout ] end -->
                         </div>
                         <!-- [ Main Content ] end -->
