@@ -41,9 +41,9 @@
 				<li class="nav-item pcoded-hasmenu">
 				    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book"></i></span><span class="pcoded-mtext">Assessments</span></a>
 				    <ul class="pcoded-submenu">
-				        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/template_for_staff_pages.php">Examination</a></li>
-				        <li><a href="#">Test</a></li>
-                        <li><a href="#">Quiz</a></li>
+				        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/view_examination_list.php">Examination</a></li>
+				        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/view_test_list.php">Test</a></li>
+                        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/view_quiz_list.php">Quiz</a></li>
 				    </ul>
 				</li>
 
