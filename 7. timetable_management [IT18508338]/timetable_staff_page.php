@@ -3,14 +3,13 @@
 <html lang="en">
 
 <head>
-    <?php include '../dashboard_for_staff/head.inc.php'  ?>
-    <?php include '../dashboard_for_staff/nav_header_tutor.php'?>
+    <?php include '../homepage_for_student/head.inc.php' ?>
     <?php include dirname(__FILE__).'/controllers/ViewRelevantStaffTimetableController.php' ?>
 </head>
 
 <body>
 
-
+    <?php include '../dashboard_for_staff/nav_and_header.inc.php'?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -45,12 +44,11 @@
                                 <?php
 
                                     global $timetableView;
-                                    global $resTemp;
+                                    global $res;
                                     global $resCount;
 
-                                    $p = 0;
                                     //[for loop to display all the timetables that the tutor is involved in] start
-                                    for($p;$p<$resCount;$p++){
+                                    for($r=0;$r<$resCount;$r++){
                                 ?>
 
                                 <div class="col-sm-12">
@@ -58,8 +56,7 @@
                                         <div class="card-body">
 
                                             <!--echo out the timetable id-->
-
-                                            <h5><?php print_r($resTemp[$p]); ?></h5>
+                                            <h5><?php print_r($res[$r]) ?></h5>
 
                                             <!-- [Timetable view]-->
                                             <table class="table table-hover"">
@@ -94,7 +91,7 @@
 
                                                                 //new ITimetableCellServiceImplementation() to set the the id and retrieve data
                                                                 $tcsv = new ITimetableCellServiceImplementation();
-                                                                TimetableCell::setTimeId($resTemp[$p]);
+                                                                TimetableCell::setTimeId($res[$r]);
 
                                                                 //viewAllTimetableCells() method called
                                                                 $tcsv->viewAllTimetableCells(TimetableCell::getTimeId(),$i,$timeslot_start);
@@ -120,7 +117,7 @@
                                     </div>
                                 </div>
                                     <?php } ?>
-                                    <!--[for loop to display all the timetables that the tutor is involved in] end -->
+                                    <!--[for loop to display all the timetables that the tutorr is involved in] end -->
                                 <!-- [ fixed-layout ] end -->
                             </div>
                             <!-- [ Main Content ] end -->
@@ -133,7 +130,7 @@
     </div>
     <!-- [ Main Content ] end -->
 
-    <?php include '../dashboard_for_staff/req_js.inc.php' ?>
+    <?php /*include'../dashboard_for_staff/req_js.inc.php' */?>
 </body>
 
 </html>

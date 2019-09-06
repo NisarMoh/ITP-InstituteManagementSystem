@@ -13,7 +13,7 @@
 
     <!-- get from URL the id that was entered-->
     <?php $timeId = $_GET['timetable']; ?>
-    <?php include '../dashboard_for_staff/nav_and_header.inc.php'?>
+    <?php include '../dashboard_for_staff/nav_and_header.inc.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -51,7 +51,7 @@
                                         <div class="card-body">
 
                                             <!--[Timetable form] start -->
-                                            <form method="post" action= "../7.%20timetable_management%20%5BIT18508338%5D/controllers/AddTimetableController.php?timetable=<?php echo $timeId ?>" >
+                                            <form method="post" action="../7.%20timetable_management%20%5BIT18508338%5D/controllers/AddTimetableController.php?timetable=<?php echo $timeId ?>">
 
                                                 <table class="table table-hover"">
                                                     <!-- [column names] -->
@@ -71,29 +71,29 @@
                                                         <?php
                                                         $timeslot_start = 8;
                                                         $timeslot_end = 16;
-                                                        for($timeslot_start;$timeslot_start <= $timeslot_end;$timeslot_start++){?>
+                                                        for ($timeslot_start; $timeslot_start <= $timeslot_end; $timeslot_start++) { ?>
 
                                                             <tr>
                                                                 <!-- [time] -->
                                                                 <td>
-                                                                    <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start+1?>:00
+                                                                    <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start + 1 ?>:00
                                                                 </td>
 
                                                                 <!-- for loop to iterate the column data for a row -->
-                                                                <?php for($i = 1; $i <= 7;$i++) {?>
+                                                                <?php for ($i = 1; $i <= 7; $i++) { ?>
                                                                     <td>
-                                                                        <input class = "mb-3 form-control form-control-sm" type="text" oninput="this.value = this.value.replace(/[^a-z]/, '')" placeholder="Enter Tutor" name="<?php echo $timeslot_start."tutor".$i?>"/>
-                                                                        <input class = "mb-3 form-control form-control-sm" type="text" placeholder="Enter Subject" name="<?php echo $timeslot_start."subject".$i?>"/>
-                                                                    </td>
-                                                                <?php }?>
-                                                                <!--for loop to iterate the column data for a row end -->
-                                                            </tr>
-                                                         <?php } ?>
-                                                        <!--for loop to iterate rows end -->
+                                                                        <input class = " mb-3 form-control form-control-sm" type="text" placeholder="Enter Tutor" name="<?php echo $timeslot_start . "tutor" . $i ?>" />
+                                                <input class="mb-3 form-control form-control-sm" type="text" placeholder="Enter Subject" name="<?php echo $timeslot_start . "subject" . $i ?>" />
+                                                </td>
+                                            <?php } ?>
+                                            <!--for loop to iterate the column data for a row end -->
+                                            </tr>
+                                        <?php } ?>
+                                        <!--for loop to iterate rows end -->
 
-                                                </table>
+                                        </table>
 
-                                                <button type = "submit" class = "btn btn-primary" name = "timetable_admin_insert_save">Save</button>
+                                        <button type="submit" class="btn btn-primary" name="timetable_admin_insert_save">Save</button>
                                             </form>
                                             <!-- [Timetable form] end-->
 
@@ -112,7 +112,7 @@
     </div>
     <!-- [ Main Content ] end -->
 
-    <?php include'../dashboard_for_staff/req_js.inc.php' ?>
+    <?php include '../dashboard_for_staff/req_js.inc.php' ?>
 </body>
 
 </html>

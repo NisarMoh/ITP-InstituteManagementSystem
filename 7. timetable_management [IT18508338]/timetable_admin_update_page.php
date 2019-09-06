@@ -5,14 +5,14 @@
 
 <head>
     <?php include '../dashboard_for_staff/head.inc.php' ?>
-    <?php include dirname(__FILE__).'/controllers/UpdateTimetableController.php'; ?>
+    <?php include dirname(__FILE__) . '/controllers/UpdateTimetableController.php'; ?>
 </head>
 
 <body>
 
     <!-- get from URL the id that was entered-->
     <?php $timetableId = $_GET['updateTimetable']; ?>
-    <?php include '../dashboard_for_staff/nav_and_header.inc.php'?>
+    <?php include '../dashboard_for_staff/nav_and_header.inc.php' ?>
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -50,7 +50,7 @@
                                         <div class="card-body">
 
                                             <!--[Timetable update form] start-->
-                                            <form method="post" action="../7.%20timetable_management%20%5BIT18508338%5D/controllers/UpdateTimetableController.php?updateTimetable=<?php echo $timetableId?>">
+                                            <form method="post" action="../7.%20timetable_management%20%5BIT18508338%5D/controllers/UpdateTimetableController.php?updateTimetable=<?php echo $timetableId ?>">
                                                 <!--echo the timetable id-->
                                                 <h5><?php echo $timetableId ?></h5>
 
@@ -72,28 +72,28 @@
                                                     <?php
                                                     $timeslot_start = 8;
                                                     $timeslot_end = 16;
-                                                    for($timeslot_start;$timeslot_start <= $timeslot_end;$timeslot_start++){?>
+                                                    for ($timeslot_start; $timeslot_start <= $timeslot_end; $timeslot_start++) { ?>
 
                                                         <tr>
                                                             <!-- [time] -->
                                                             <td>
-                                                                <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start+1?>:00
+                                                                <?php echo $timeslot_start ?>:00 - <?php echo $timeslot_start + 1 ?>:00
                                                             </td>
 
                                                             <!-- for loop to iterate the column data for a row -->
-                                                            <?php for($i = 1; $i <= 7;$i++) {
+                                                            <?php for ($i = 1; $i <= 7; $i++) {
 
-                                                                $tcsu = new ITimetableCellServiceImplementation();
-                                                                TimetableCell::setTimeId($timetableId);
-                                                                $tcsu->viewAllTimetableCells(TimetableCell::getTimeId(),$i,$timeslot_start);
-                                                                ?>
+                                                                    $tcsu = new ITimetableCellServiceImplementation();
+                                                                    TimetableCell::setTimeId($timetableId);
+                                                                    $tcsu->viewAllTimetableCells(TimetableCell::getTimeId(), $i, $timeslot_start);
+                                                                    ?>
 
                                                                 <td>
-                                                                    <input class = "mb-3 form-control form-control-sm" type="text" value="<?php echo TimetableCell::getTutorId(); ?>" oninput="this.value = this.value.replace(/[^a-z]/, '')" placeholder="Enter Tutor" name="<?php echo $timeslot_start."tutor".$i?>"/>
-                                                                    <input class = "mb-3 form-control form-control-sm" type="text" value="<?php echo TimetableCell::getSubjectId(); ?>" placeholder="Enter Subject" name="<?php echo $timeslot_start."subject".$i?>"/>
+                                                                    <input class="mb-3 form-control form-control-sm" type="text" value="<?php echo TimetableCell::getTutorId(); ?>" placeholder="Enter Tutor" name="<?php echo $timeslot_start . "tutor" . $i ?>" />
+                                                                    <input class="mb-3 form-control form-control-sm" type="text" value="<?php echo TimetableCell::getSubjectId(); ?>" placeholder="Enter Subject" name="<?php echo $timeslot_start . "subject" . $i ?>" />
                                                                 </td>
 
-                                                            <?php }?>
+                                                            <?php } ?>
                                                             <!--for loop to iterate the column data for a row end -->
 
                                                         </tr>
@@ -102,7 +102,7 @@
 
                                                 </table>
 
-                                                <button type = "submit" class = "btn btn-primary" name="timetable_admin_update_saveChanges">Save changes</button>
+                                                <button type="submit" class="btn btn-primary" name="timetable_admin_update_saveChanges">Save changes</button>
                                             </form>
                                             <!-- [Timetable update form] end-->
 
@@ -121,8 +121,7 @@
     </div>
     <!-- [ Main Content ] end -->
 
-    <?php include'../dashboard_for_staff/req_js.inc.php' ?>
+    <?php include '../dashboard_for_staff/req_js.inc.php' ?>
 </body>
 
 </html>
-
