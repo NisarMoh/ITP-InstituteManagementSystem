@@ -28,9 +28,7 @@
                 <li class="nav-item pcoded-hasmenu">
                     <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book"></i></span><span class="pcoded-mtext">Assessments</span></a>
                     <ul class="pcoded-submenu">
-                        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/template_for_student_pages.php">Examination</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Quiz</a></li>
+                        <li><a href="../1.%20examination_management%20%5BIT18019964%5D/view_student_result.php">Result</a></li>
                     </ul>
                 </li>
 
