@@ -14,14 +14,15 @@
         <div class="navbar-content sidenav-horizontal" id="layout-sidenav">
             <ul class="nav pcoded-inner-navbar sidenav-inner">
 
-				<li class="nav-item">
-				    <a href="../homepage_for_student/homepage.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Home</span></a>
-				</li>
+                <li class="nav-item">
+                    <a href="../homepage_for_student/homepage.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Home</span></a>
+                </li>
 
                 <li class="nav-item pcoded-hasmenu">
                     <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/subject_view_student.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-layer-group"></i></span><span class="pcoded-mtext">My Subjects</span></a>
                     <ul class="pcoded-submenu">
-                        <?php include '../6.%20subject_and_classroom_management%20%5BIT18352740%5D/subject_dropdown_menu.php';?>
+                        <?php //include '../6.%20subject_and_classroom_management%20%5BIT18352740%5D/subject_dropdown_menu.php'; 
+                        ?>
                     </ul>
                 </li>
 
@@ -32,24 +33,24 @@
                     </ul>
                 </li>
 
-				<li class="nav-item">
-				    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_student_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
-				</li>
+                <li class="nav-item">
+                    <a href="../7.%20timetable_management%20%5BIT18508338%5D/timetable_student_page.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-calendar-alt"></i></span><span class="pcoded-mtext">Timetables</span></a>
+                </li>
 
-				<li class="nav-item">
-				    <a href="../2.%20notice_and_forum%20%5BIT18018356%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-comment-alt"></i></span><span class="pcoded-mtext">Forum</span></a>
-				</li>
+                <li class="nav-item">
+                    <a href="../2.%20notice_and_forum%20%5BIT18018356%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-comment-alt"></i></span><span class="pcoded-mtext">Forum</span></a>
+                </li>
 
-				<li class="nav-item">
-				    <a href="../8.%20transaction_management%20%5BIT14043338%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Fees</span></a>
-				</li>
-		         
-		    
-		              <li class="nav-item">
-				    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
-				</li>
-				
-		    
+                <li class="nav-item">
+                    <a href="../8.%20transaction_management%20%5BIT14043338%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-hand-holding-usd"></i></span><span class="pcoded-mtext">Fees</span></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="../5.%20file_management%20%5BIT18122138%5D/template_for_student_pages.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-book-open"></i></span><span class="pcoded-mtext">Learning Materials</span></a>
+                </li>
+
+
             </ul>
         </div>
     </div>
@@ -62,7 +63,7 @@
         <div class="m-header">
             <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
             <a href="../index.php" class="b-brand">
-               <!-- ========   [ IMS: Logo ]   ============ -->
+                <!-- ========   [ IMS: Logo ]   ============ -->
                 <img src="../assets/images/logo.png" alt="" class="logo">
                 <img src="../assets/images/logo-icon.png" alt="" class="logo-thumb">
             </a>
