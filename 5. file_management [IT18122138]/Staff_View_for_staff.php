@@ -1,4 +1,14 @@
+<?php
+// Initialize the session
 
+session_start();
+include_once '../3. staff_management [IT18068610]/user.php';
+$user = new User();
+$Staff_ID = $_SESSION['Staff_ID'];
+if (!$user->get_session()) {
+	header("location:login.php");
+}
+?>
 
 <?php include '../dashboard_for_staff/session_for_staff.php' ?>
 <!DOCTYPE html>
@@ -31,7 +41,7 @@
 												</div>
 												<ul class="breadcrumb">
 													<!-- [ IMS: breadcrumb ] -->
-													<li class="breadcrumb-item"><a href="../dashboard_for_staff/dashboard.php"><i class="feather icon-home"></i></a></li>
+													<li class="breadcrumb-item"><a href="template_for_staff_pages.php"><i class="feather icon-home"></i></a></li>
 													<li class="breadcrumb-item"><a href="#!">File management</a></li>
 												</ul>
 											</div>
