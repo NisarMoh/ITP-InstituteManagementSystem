@@ -4,7 +4,7 @@ class DbConfig
     private $_host = 'localhost';
     private $_username = 'root';
     private $_password = '';
-    private $_database = 'oop1';
+    private $_database = 'institute_management_system';
     
     protected $connection;
     

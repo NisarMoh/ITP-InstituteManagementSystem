@@ -1,9 +1,9 @@
 <?php
 //include "DbConfig.php";
 //include "mysql_db_connection.inc.php";
-
+include 'getDBconn.php';
 //check mysql db connection on the initial page
-include '../DatabaseConnection.php';
+//include '../DatabaseConnection.php';
 
 
 
@@ -13,10 +13,12 @@ class User
         /*** for registration process ***/
         public function __construct()
         {
-                $this->db = DatabaseConnection::getInstance()->getConnection();
-                //  $obj11 = new BB;
+                include 'getDBconn.php';
+                // $this->db = DatabaseConnection::getInstance()->getConnection();
+                // $obj11 = new BB;
                 // $this->db = $obj11->DBconnection();
 
+                $this->db = $conn;
         }
 
 

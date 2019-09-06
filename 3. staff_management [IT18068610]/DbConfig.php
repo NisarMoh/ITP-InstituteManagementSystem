@@ -5,7 +5,7 @@ class BB
     private $DB_SERVER = "localhost";
     private $DB_USERNAME = "root";
     private $DB_PASSWORD = "";
-    private $DB_DATABASE = "oop1";
+    private $DB_DATABASE = "institute_management_system";
 
     public function DBconnection()
     {

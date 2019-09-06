@@ -38,11 +38,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="pcoded-inner-content">
                     <div class="main-body ">
                         <div class="page-wrapper ">
-                            <div class="page-header bg-primary ">
+                            <div class="page-header  ">
                                 <div class="page-block ">
                                     <div class="row align-items-center">
                                         <div class="col-md-8">
-                                            <div class="page-header-title">
+                                            <div class="page-header-title ">
                                                 <!-- [ IMS: page title ] -->
                                                 <?php include 'edit.php' ?>
                                                 <!-- <h2 class="m-b-10">Staff Admin Panel <i class="fas fa-user-shield "></i></h2> -->

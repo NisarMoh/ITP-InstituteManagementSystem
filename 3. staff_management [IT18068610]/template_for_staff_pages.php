@@ -57,7 +57,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="card text-white bg-success ">
                                         <div class="card-header">
-                                            <h3 class="card-title text-light"><a class="text-light" href="template_Crud.php"> Staff management</a></h3>
+                                            <h4 class="card-title text-light"><a class="text-light" href="template_Crud.php"> Staff management</a></h4>
                                         </div>
                                         <div class="card-body">
                                             <h1 class="card-title text-white"> <a href="template_Crud.php"><i class="fas fa-user-plus text-light"></i></a></h1>
@@ -69,22 +69,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <div class="col-sm-4">
                                     <div class="card text-white bg-danger ">
                                         <div class="card-header">
-                                            <h4 class="card-title text-white">Student Management</h4>
+                                            <h4 class="card-title text-white"><a class="text-light" href="../4. student_management [IT18096576]/studentcrud.php"> Student management</a></h4>
                                         </div>
                                         <div class="card-body">
-                                            <h1 class="card-title text-white"> <a href="../4. student_management [IT18096576]/crudadd.php"><i class="fas fa-user-times"></i></a></h1>
-                                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card text-white bg-warning ">
-                                        <div class="card-header">
-                                            <h3 class="card-title text-white">Edit Staff</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <h1 class="card-title text-white"> <i class="fas fa-user-edit"></i></h1>
-
+                                            <h1 class="card-title text-white"> <a href="../4. student_management [IT18096576]/studentcrud.php"><i class="fas fa-user-plus text-light"></i></a></h1>
                                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                         </div>
                                     </div>
@@ -92,40 +80,49 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <div class="col-sm-4">
                                     <div class="card text-white bg-info ">
                                         <div class="card-header">
-                                            <h3 class="card-title text-white">View Staff</h3>
+                                            <h4 class="card-title text-white"><a class="text-light" href="../7. timetable_management [IT18508338]\timetable_admin_mainmenu_page.php"> Timetable Management</a></h4>
                                         </div>
                                         <div class="card-body">
-                                            <h1 class="card-title text-white"> <i class="fas fa-user-plus"></i></h1>
+                                            <h1 class="card-title text-white"> <a href="../7. timetable_management [IT18508338]\timetable_admin_mainmenu_page.php"><i class="fas fa-user-plus text-light"></i></a></h1>
+                                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-info ">
+                                        <div class="card-header">
+                                            <h4 class="card-title text-white"><a class="text-light" href="  ../dashboard_for_staff/tutor_view.php"> View System</a></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h1 class="card-title text-white"><a class="text-light" href="  ../dashboard_for_staff/tutor_view.php"> <i class="fas fa-eye"></i></a></h1>
 
                                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="card text-white bg-secondary ">
+                                    <div class="card text-white bg-warning ">
                                         <div class="card-header">
-                                            <h3 class="card-title text-white">Change Password</h3>
+                                            <h4 class="card-title text-white"><a class="text-light" href="../6. subject_and_classroom_management [IT18352740]\subject_staff_home.php"> Subject</a></h4>
                                         </div>
                                         <div class="card-body">
-                                            <h1 class="card-title text-white"> <i class="fas fa-key"></i></h1>
-
+                                            <h1 class="card-title text-white"> <a href="../6. subject_and_classroom_management [IT18352740]\subject_staff_home.php"><i class="fas fa-user-plus text-light"></i></a></h1>
                                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="card text-white bg-primary ">
+                                    <div class="card text-white bg-dark ">
                                         <div class="card-header">
-                                            <h3 class="card-title text-white"> System Settings</h3>
+                                            <h4 class="card-title text-white"><a class="text-light" href="../6. subject_and_classroom_management [IT18352740]\class_staff_home.php"> Class</a></h4>
                                         </div>
                                         <div class="card-body">
-                                            <h1 class="card-title text-white"> <i class="fas fa-tools"></i></h1>
-
+                                            <h1 class="card-title text-white"> <a href="../6. subject_and_classroom_management [IT18352740]\subject_staff_home.php"><i class="fas fa-user-plus text-light"></i></a></h1>
                                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
 
 
