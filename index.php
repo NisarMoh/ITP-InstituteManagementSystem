@@ -87,7 +87,7 @@
                                 </div>
 
                                 <div class="col-md-6 col-xl-3">
-                                    <a href="homepage_for_student/template_for_student_pages.php">
+                                    <a href="4. student_management [IT18096576]/index.php">
                                         <div class="card bg-c-blue notification-card">
                                             <div class="card-body">
                                                 <div class="row align-items-center">

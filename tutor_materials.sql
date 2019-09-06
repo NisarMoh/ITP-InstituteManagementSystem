@@ -15,12 +15,12 @@ CREATE TABLE IF NOT EXISTS `tutor_materials` (
 
 --2
 
-ALTER TABLE `tutor_materials` ADD FOREIGN KEY ( `Staff_ID` ) REFERENCES `oop1`.`staff` (
+ALTER TABLE `tutor_materials` ADD FOREIGN KEY ( `Staff_ID` ) REFERENCES `institute_management_system`.`staff` (
 `Staff_ID`
 ) ON DELETE CASCADE ON UPDATE CASCADE  ;
 
 --3
 
-ALTER TABLE `tutor_materials` ADD FOREIGN KEY ( `SubjectID` ) REFERENCES `oop1`.`subject` (
+ALTER TABLE `tutor_materials` ADD FOREIGN KEY ( `SubjectID` ) REFERENCES `institute_management_system`.`subject` (
 `sub_id`
 ) ON DELETE CASCADE ON UPDATE CASCADE  ;
