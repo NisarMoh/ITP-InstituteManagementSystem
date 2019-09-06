@@ -46,7 +46,7 @@
 
                             <div class="col-sm-12">
                                 <div class="card ">
-                                    <div class="col-sm-4">
+
 
 
                                         <?php
@@ -56,19 +56,19 @@
                                         ?>
 
 
-                                        <div class="row justify-content-center">
+
 
 
                                             <table class="table" style="width: 100%;">
-                                                <thead class="table">
+                                                <thead class="table w-800" >
                                                 <tr>
-                                                    <th>Classroom</th>
-                                                    <th>Building</th>
-                                                    <th>Number Of Seats</th>
-                                                    <th>Floor</th>
-                                                    <th>Multimedia</th>
-                                                    <th>AIR Condition</th>
-                                                    <th colspan="2">Action</th>
+                                                    <th class="w-14">Classroom</th>
+                                                    <th class="w-14">Building</th>
+                                                    <th class="w-14">Number Of Seats</th>
+                                                    <th class="w-14">Floor</th>
+                                                    <th class="w-14">Multimedia</th>
+                                                    <th class="w-14">AIR Condition</th>
+                                                    <th class="w-14" colspan="2">Action</th>
                                                 </tr>
                                                 </thead>
 
@@ -98,9 +98,9 @@
 
 
 
-                                        </div>
 
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
