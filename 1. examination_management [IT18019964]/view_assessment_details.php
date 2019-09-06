@@ -133,7 +133,7 @@
                                                     </tr>
 
                                                     <tr>
-                                                        <td>Data time</td>
+                                                        <td>Date time</td>
                                                         <td><?php echo $assessment->getDateTime(); ?></td>
                                                     </tr>
 
