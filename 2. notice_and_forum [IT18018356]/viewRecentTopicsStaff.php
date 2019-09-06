@@ -2,7 +2,7 @@
 
 include_once '../2. notice_and_forum [IT18018356]/loggedInCheck.php';
 
-    $sql = "SELECT topic_text , topic_id , category_name , category_id , t.topic_date, t.topic_time
+$sql = "SELECT topic_text , topic_id , category_name , category_id , t.topic_date, t.topic_time
             FROM forum_topic t, forum_category c
             WHERE t.topic_category_id = c.category_id AND t.topic_date > curdate() - 3
             ORDER BY t.topic_date DESC , t.topic_time DESC
@@ -31,9 +31,7 @@ if ($checkResult > 0) {
     }
 
     echo '</table>';
-
 } else {
     echo 'Nothing has been posted for a while...';
+    echo 'You can check out <a href="../2. notice_and_forum [IT18018356]/viewAllTopics.php">all topics</a>';
 }
-
-?>
