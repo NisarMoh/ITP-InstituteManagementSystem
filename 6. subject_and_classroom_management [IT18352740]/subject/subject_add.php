@@ -5,11 +5,11 @@
        $mysqli = new mysqli('localhost', 'root', '', 'institute_management_system')
        or die(mysqli_errno($mysqli));
 
-       $update = false;
+        $update = false;
         $subject_add = '';
         $reference_add = '';
         $decription_add = '';
-            $amount_add = '';
+        $amount_add = '';
 
        if (isset($_POST['btn_subject_add'])){
 
@@ -18,11 +18,9 @@
            $decription_add = $_POST["decription_add"];
            $amount_add = $_POST["amount_add"];
 
-           $mysqli->query("INSERT INTO subject(subject, reference, decription, amount) 
-VALUES ('$subject_add', '$reference_add', '$decription_add', '$amount_add')")
-               or die($mysqli->error);
+           $mysqli->query("INSERT INTO subject(subject, reference, decription, amount) VALUES ('$subject_add', '$reference_add', '$decription_add', '$amount_add')") or die($mysqli->error);
 
-          $url = "subject_add_subject.php?value=success";
+           $url = "subject_add_subject.php?value=success";
 
             header('location: '.$url);
 

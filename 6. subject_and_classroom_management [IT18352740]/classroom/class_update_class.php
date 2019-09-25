@@ -31,7 +31,7 @@ include'mysql_db_connection.inc.php';
                                         </div>
                                         <ul class="breadcrumb">
                                             <!-- [ IMS: breadcrumb ] -->
-                                            <li class="breadcrumb-item"><a href="../dashboard_for_staff/dashboard.php"><i class="feather icon-home"></i></a></li>
+                                            <li class="breadcrumb-item"><a href="../../dashboard_for_staff/dashboard.php"><i class="feather icon-home"></i></a></li>
                                             <li class="breadcrumb-item"><a href="#!">Update Classroom</a></li>
                                         </ul>
                                     </div>

@@ -56,7 +56,7 @@
 
                                     <form method="POST" action="subject_add.php">
                                         <div class="subject_add">
-                                            <label>Subject</label>
+                                            <label>Add Amount</label>
 
                                             <input type="text" class="form-control" value="<?php echo $subject_add; ?>" placeholder="" name="subject_add" required>
 
@@ -71,7 +71,7 @@
 
                                         <div class="decription_add">
                                             <label for="exampleFormControlTextarea1">Description</label>
-                                            <textarea class="form-control" value ="<?php echo $decription_add; ?> " id="exampleFormControlTextarea1" rows="3" name="decription_add" maxlength="500" required></textarea>
+                                            <textarea class="form-control" value ="<?php echo $description_add; ?> " id="exampleFormControlTextarea1" rows="3" name="description_add" maxlength="500" required></textarea>
                                         </div>
 
                                         <div class="amount_add">
@@ -81,7 +81,7 @@
 
 
 
-                                            <div class="btn_add">
+                                            <div class="form-group">
                                                 <button type = "submit" class = "btn btn-primary" name="btn_subject_add">Submit</button>
                                             </div>
 

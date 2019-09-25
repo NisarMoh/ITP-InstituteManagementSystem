@@ -31,7 +31,7 @@
 				</li>
 
 				<li class="nav-item">
-				    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/class_staff_home.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chalkboard"></i></span><span class="pcoded-mtext">Classrooms</span></a>
+				    <a href="../6.%20subject_and_classroom_management%20%5BIT18352740%5D/classroom/class_staff_home.php" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chalkboard"></i></span><span class="pcoded-mtext">Classrooms</span></a>
 				</li>
 
 				<li class="nav-item pcoded-menu-caption">

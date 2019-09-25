@@ -8,7 +8,7 @@
             align-content: center;
         }</style>
 </head>
-<link rel="stylesheet" href="subject_view_subject.css">
+<link rel="stylesheet" href="../subject_view_subject.css">
 <body>
 
 <?php include '../dashboard_for_staff/nav_and_header.inc.php' ?>
